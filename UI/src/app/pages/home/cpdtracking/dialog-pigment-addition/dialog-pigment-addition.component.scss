@@ -1,0 +1,44 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .cancel {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .submit {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .addButton {
+    float: right;
+    margin-right: 1rem;
+  }
+
+  .error {
+    font-size: 13px;
+    color: #c7254e;
+    background: #f9f2f4;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 5px 0 10px;
+  }
+
+  .setHeight{
+    //height: 10000px;
+    max-block-size: 100%;
+    min-width: 750px !important;
+    max-width: 100% !important;
+    //min-width: 100% ;
+  }
+  
+  .dropDownListSetWidth{
+    max-block-size: 100%;
+    min-width: 500px !important;
+    max-width: 100% !important;
+    //min-width: 100% ;
+  }
+
+  .cdk-global-scrollblock { position: initial; width: initial; overflow: hidden; }
+}

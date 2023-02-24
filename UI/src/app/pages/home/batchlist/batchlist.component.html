@@ -1,0 +1,22 @@
+<!--<nb-card class="custom-card" [hidden]="hideNotificationCard">
+  <nb-card-header>Notification</nb-card-header>
+  <nb-card-body>
+    <ng2-smart-table [settings]="notificationSettings" [source]="notificationSource"> 
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>-->
+
+<nb-card class="custom-card">
+    <nb-card-header>
+      <span class="layouttitle">CPD Batch Order List</span>
+      
+      <button class="addButton"  [hidden]="getAPIAccess('Home', 'CPDBatchOrderList', 'CreateBatch')" nbButton (click)="openModal()" size="small"><nb-icon icon="plus"></nb-icon>Add New CPD Batch</button>
+      <!--<button class="syncButton" [hidden]="getAPIAccess('Home', 'CPDBatchOrderTracking', 'StartSync')" nbButton (click)="syncToCPDHMI()" size="small"><nb-icon icon="repeat"></nb-icon>Sync To CPD HMI</button>-->
+      <!--<button class="addButton" nbButton (click)="importData()" size="small"><nb-icon icon="file-add-outline"></nb-icon>Import CPD Batch</button>-->
+    </nb-card-header>
+  
+    <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="source"> 
+      </ng2-smart-table>
+    </nb-card-body>
+</nb-card>

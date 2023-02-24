@@ -1,0 +1,96 @@
+<nb-card>
+  <nb-card-header>
+      <h6>Enter BOM details <span class="batchnolabel">Batch Number: {{currentbatchno}}</span></h6>
+  </nb-card-header>
+  <nb-card-body>
+    <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+      <div class="accordion-container">
+        <nb-accordion multi>
+          <nb-accordion-item>
+            <nb-accordion-item-header>
+              Stabilization
+            </nb-accordion-item-header>
+            <nb-accordion-item-body>
+              <table class="table table-hover" formGroupName="stabilization">
+                <thead>
+                  <tr>
+                    <th>Item ID</th>
+                    <th>Batch No</th>
+                    <th>Target Weight</th>
+                    <th>Actual Weight</th>
+                  </tr>
+                </thead>
+                <tbody formArrayName="items">
+                  <tr *ngFor="let item of getControls('stabilization'); let i=index" [formGroupName]="i">
+                    <td *ngIf="i == 0">Agwet HT</td> <td *ngIf="i == 1">Soft Water</td> <td *ngIf="i == 2">Soft Water (Flushing)</td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="itembatchno" placeholder="Batch No"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="targetweight" placeholder="Target Weight"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="actualweight" placeholder="Actual Weight"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+          <nb-accordion-item>
+            <nb-accordion-item-header>
+              Composite
+            </nb-accordion-item-header>
+            <nb-accordion-item-body>
+              <table class="table table-hover" formGroupName="composite">
+                <thead>
+                  <tr>
+                    <th>Item ID</th>
+                    <th>Batch No</th>
+                    <th>Target Weight</th>
+                    <th>Actual Weight</th>
+                  </tr>
+                </thead>
+                <tbody formArrayName="items">
+                  <tr *ngFor="let item of getControls('composite'); let i=index" [formGroupName]="i">
+                    <td *ngIf="i == 0">Octocure HCLP-60(YS)</td> <td *ngIf="i == 1">Octocure ZDE 50</td> <td *ngIf="i == 2">Octotint 705</td>
+                    <td *ngIf="i == 3">Octocure 573</td> <td *ngIf="i == 4">Soft Water</td> <td *ngIf="i == 5">Soft Water (Flushing)</td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="itembatchno" placeholder="Batch No"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="targetweight" placeholder="Target Weight"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="actualweight" placeholder="Actual Weight"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+          <nb-accordion-item>
+            <nb-accordion-item-header>
+              Wax
+            </nb-accordion-item-header>
+            <nb-accordion-item-body>
+              <table class="table table-hover" formGroupName="wax">
+                <thead>
+                  <tr>
+                    <th>Item ID</th>
+                    <th>Batch No</th>
+                    <th>Target Weight</th>
+                    <th>Actual Weight</th>
+                  </tr>
+                </thead>
+                <tbody formArrayName="items">
+                  <tr *ngFor="let item of getControls('wax'); let i=index" [formGroupName]="i">
+                    <td *ngIf="i == 0">Aquawax 48</td> <td *ngIf="i == 1">Soft Water</td> <td *ngIf="i == 2">Soft Water (Flushing)</td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="itembatchno" placeholder="Batch No"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="targetweight" placeholder="Target Weight"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="actualweight" placeholder="Actual Weight"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+        </nb-accordion>
+      </div>
+    </form>
+    <!-- <button class="addbom" nbButton (click)="openModal()">Add BOM</button> <div class="labelstatus">Is BOM added: {{isBomAdded}}</div> -->
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="submit" form="mainform" type="submit" nbButton status="success"
+            [disabled]="mainForm.invalid" size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+    <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+  </nb-card-footer>
+</nb-card>
+  

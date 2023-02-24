@@ -1,0 +1,14 @@
+<nb-card>
+  <nb-card-header>
+      <h6>Upload Excel file here</h6>
+  </nb-card-header>
+  <nb-card-body>
+    <input nbInput type="file" ID="fileSelect" accept=".xml" (change)="handleFileInput($event.target.files)"/>
+  </nb-card-body>
+  <nb-card-footer>
+    <button nbButton class="submit" type="submit" status="success"
+            size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+    <button nbButton class="cancel" status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+  </nb-card-footer>
+</nb-card>
+  

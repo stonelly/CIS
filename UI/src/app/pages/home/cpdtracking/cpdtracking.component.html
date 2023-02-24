@@ -1,0 +1,20 @@
+<nb-card class="do-not-print">
+  <nb-card-header>
+    <span class="layouttitle">CPD Batch Order Tracking</span>
+    <button class="refreshButton" nbButton (click)="refreshTable()" size="small"><nb-icon icon="refresh"></nb-icon>Refresh Table</button>
+    <!--<button class="refreshButton" [nbSpinner]="loadingSpinner" [hidden]="getAPIAccess('Home', 'CPDBatchOrderTracking', 'StartSync')" nbButton (click)="syncToCPDHMI()" size="small"><nb-icon icon="repeat"></nb-icon>Sync To CPD HMI</button>-->
+    <!--<button></button>-->
+  </nb-card-header>
+
+  <nb-card-body>
+    
+      <ng2-smart-table [settings]="settings"  [source]="source" (deleteConfirm)="onDeleteConfirm($event)"> <!-- -->
+      </ng2-smart-table>
+
+      <br>
+      <br>
+      <!--<ng2-smart-table [settings]="settings"  (userRowSelect)="onRowSelect($event)" [source]="source2" (deleteConfirm)="onDeleteConfirm($event)"> 
+      </ng2-smart-table>-->
+  </nb-card-body>
+</nb-card>
+  

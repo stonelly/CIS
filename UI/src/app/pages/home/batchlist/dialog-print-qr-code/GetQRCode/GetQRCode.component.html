@@ -1,0 +1,154 @@
+<nb-card>
+  <nb-card-header>Generate Label </nb-card-header>
+  <nb-card-body>
+    <form [formGroup]="generateQRForm" onsubmit="return false">
+      <div class="row col-12">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="input-oven" style="font-weight:bold">CPD Batch No</label
+            ><br />
+            <input
+              nbInput
+              readonly
+              name="batchno"
+              autocomplete="off"
+              id="input-CPDBatchNo"
+              formControlName="CPDBatchNo"
+              placeholder="CPD Batch No"
+              class="input-field disabled"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="input-oven" style="font-weight:bold">Mixing Tank</label
+            ><br />
+            <input
+              nbInput
+              readonly
+              name="mixingtank"
+              autocomplete="off"
+              id="input-MixingTank"
+              formControlName="MixingTank"
+              placeholder="Mixing Tank"
+              class="input-field disabled"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="input-oven" style="font-weight:bold">Plant</label><br />
+            <input
+              nbInput
+              readonly
+              name="plant"
+              autocomplete="off"
+              id="input-Plant"
+              formControlName="Plant"
+              placeholder="Plant"
+              class="input-field disabled"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="input-oven" style="font-weight:bold">Item No</label><br />
+            <input
+              nbInput
+              readonly
+              name="plant"
+              autocomplete="off"
+              id="input-ItemNo"
+              formControlName="ItemNo"
+              placeholder="Plant"
+              class="input-field disabled"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="input-oven" style="font-weight:bold">Quantity</label
+            ><br />
+            <input
+              nbInput
+              readonly
+              name="Quantity"
+              autocomplete="off"
+              id="input-Quantity"
+              formControlName="Quantity"
+              placeholder="Quantity"
+              class="input-field disabled"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="date" style="font-weight:bold">Date</label><br />
+            <input
+              id="date"
+              readonly
+              autocomplete="off"
+              class="input-field"
+              nbInput
+              placeholder="Select Date"
+              formControlName="Date"
+              format="yyyy\MM\dd"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="input-oven" style="font-weight:bold">Prepared By</label
+            ><br />
+            <input
+              nbInput
+              readonly
+              autocomplete="off"
+              name="PreparedBy"
+              id="input-PreparedBy"
+              formControlName="PreparedBy"
+              placeholder="PreparedBy"
+              class="input-field disabled"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="date" style="font-weight:bold">CPD Test Type</label><br />
+            <!--<nb-select status="primary" fullWidth formControlName="TestType">
+              <nb-option *ngFor="let types of arrayQAList" [value]="types.value"> {{ types.name }}</nb-option>
+            </nb-select>  [(value)]="radioGroupValue"-->
+            <!-- <nb-radio-group formControlName="TestType" layout="row">
+              <nb-radio *ngFor="let types of arrayQAList" [value]="types.value">
+                {{ types.name }}
+              </nb-radio>
+            </nb-radio-group> -->
+            <nb-select status="primary" multiple fullWidth placeholder="Select Test Type" formControlName="TestType">
+              <nb-option
+              *ngFor="let types of arrayQAList" [value]="types.value"
+            >
+              {{ types.name }}</nb-option
+            ></nb-select>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="form-group">
+        <button
+          nbButton
+          class="cancel"
+          [status]="'danger'"
+          (click)="closeModal()"
+          size="small"
+        >
+          <nb-icon icon="close"></nb-icon>Cancel
+        </button>
+        <button
+          nbButton
+          class="cancel"
+          [status]="'success'"
+          (click)="Submit()"
+          size="small"
+        >
+          <nb-icon icon="checkmark"></nb-icon>
+          Print QR Code Label
+        </button>
+      </div>
+    </form>
+  </nb-card-body>
+  <nb-card-footer> </nb-card-footer>
+</nb-card>

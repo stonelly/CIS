@@ -1,0 +1,35 @@
+<nb-card>
+  <nb-card-body>
+    <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+      <nb-tabset>
+        <nb-tab tabTitle="Add Location" tabIcon="file-text-outline" responsive>
+          <div class="accordion-container">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Location Name</th>
+                </tr>
+              </thead>
+              <tbody formArrayName="items">
+                <tr *ngFor="let item of getControls('items'); let i=index" [formGroupName]="i">
+                  <td>
+                      <nb-select status="primary" formControlName="Type" (selectedChange)="onTypeSelected($event)">
+                        <nb-option *ngFor="let type of typeList" [value]="type.value" placeholder="Type"> {{ type.name }}</nb-option>
+                      </nb-select>
+                  </td>
+                  <td><input nbInput fullWidth fieldSize="small" formControlName="LocationName" placeholder="Location Name" onkeyup="this.value = this.value.toUpperCase();"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>      
+        </nb-tab>
+      </nb-tabset>
+    </form>
+  </nb-card-body>
+  <nb-card-footer>
+      <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    <button class="submit" form="mainform" type="submit" nbButton status="success"
+            [disabled]="mainForm.invalid" size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+  </nb-card-footer>
+</nb-card>

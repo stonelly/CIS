@@ -1,0 +1,41 @@
+@import '../../../../../@theme/styles/themes.scss';
+
+@include nb-install-component() {
+
+  .disabled {
+    color: gray;
+  }
+
+  .input-icon-wrap {
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-icon {
+    background: #ddd;
+  }
+
+  .input-with-icon {
+    border: none;
+    flex: 1;
+  }
+
+  .input-icon, .input-with-icon {
+    padding: 10px;
+  }
+
+  .input-field {
+    width: 250px !important;
+  }
+
+  .cancel {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .submit {
+    float: right;
+  }
+
+}

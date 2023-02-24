@@ -1,0 +1,44 @@
+<nb-card>
+    <nb-card-header>
+      <h6>Add Latex Time</h6>
+    </nb-card-header>
+    <nb-card-body>
+        <form novalidate id="mainform"  [formGroup]="mainForm" autocomplete="off">
+            <div class="form-row">
+                <!--<div class="form-control-group col-md-6">
+                    <label class="label col-md-12" for="input-latexstartdatetime">Start Date Time:</label>
+                    <div class="form-row col-md-12">
+                        <input  nbInput
+                        fullWidth
+                        formControlName="latexstartdatetime"
+                        id="input-latexdstartdatetime"
+                        type="datetime-local" 
+                        value="2017-06-13T13:00:00"
+                        step="1">
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="form-control-group col-md-6">
+                    <label class="label col-md-12" for="input-latexenddatetime">End Date Time:</label>
+                    <div class="form-row col-md-12">
+                        <input  nbInput
+                        fullWidth
+                        formControlName="latexenddatetime"
+                        id="input-latexenddatetime"
+                        type="datetime-local" 
+                        value="2017-06-13T13:00:00"
+                        step="1">
+                    </div>
+                  </div>
+                </div>-->
+
+            </div><!--END first row: Start Date, End Date-->
+        </form>
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="submit"  type="submit" nbButton status="success"
+                 size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+        <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    </nb-card-footer>
+</nb-card>

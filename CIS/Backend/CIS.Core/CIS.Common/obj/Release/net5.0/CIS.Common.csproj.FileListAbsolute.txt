@@ -1,0 +1,30 @@
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Common.deps.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Common.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\ref\CIS.Common.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Common.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Data.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.csproj.AssemblyReference.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.AssemblyInfoInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.AssemblyInfo.cs
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.csproj.CoreCompileInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\ref\CIS.Common.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.csproj.CopyComplete
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Common.deps.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Common.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\ref\CIS.Common.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Common.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\bin\Release\net5.0\CIS.Data.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.csproj.AssemblyReference.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.AssemblyInfoInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.AssemblyInfo.cs
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.csproj.CoreCompileInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\ref\CIS.Common.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Common\obj\Release\net5.0\CIS.Common.csproj.CopyComplete

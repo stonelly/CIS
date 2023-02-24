@@ -1,0 +1,50 @@
+<nb-card class="custom-card">
+    <nb-card-header>
+      <span class="layouttitle">CPD Batch Order History</span>
+    </nb-card-header>
+  
+    <nb-card-body>
+
+        <!--<form [formGroup]="mainForm" class="form-inline" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label    class="label"
+                            style="padding-right: 10px;"
+                            for="input-CPDBatchOrder">
+                            Enter CPD Batch Order No:
+                  </label>
+                  <br />
+                  <input    class="form-control"
+                            style="margin-right: 10px;"
+                            nbInput
+                            type="text"
+                            placeholder="CPD Batch Order No."
+                            formControlName="cpdBatchOrder"
+                            id="input-CPDBatchOrder"/>
+
+                  <button nbButton class="form-control" status="success">Search</button>
+                </div>
+        </form>
+        <br>-->
+        <ng2-smart-table [settings]="settings" [source]="source"> 
+        </ng2-smart-table>
+
+        <div class="row customPagerDiv" >
+          <!--Disabled Button-->
+          <button nbButton class="customPagerLeftButtonDisabled" *ngIf="prevPageNumber === 0" disabled>&lsaquo;&lsaquo;</button>                   <!-- << -->
+          <button nbButton class="customPagerButtonDisabled" *ngIf="prevPageNumber === 0" disabled>&lsaquo;</button>                               <!-- < -->
+          
+          <!--Enabled Button-->
+          <button nbButton class="customPagerLeftButton" (click)="firstPage()" *ngIf="prevPageNumber > 0" >&lsaquo;&lsaquo;</button>               <!-- << -->
+          <button nbButton class="customPagerButton"     (click)="previousPage(currentPageNumber)" *ngIf="prevPageNumber > 0" >&lsaquo;</button>   <!-- <-->
+          <button nbButton class="customPagerButton"     (click)="goToPage(prevPageNumber)" *ngIf="prevPageNumber > 0"  >{{prevPageNumber}}</button>
+          <button nbButton class="customPagerCurrentButton"     >{{currentPageNumber}}</button>
+          <button nbButton class="customPagerButton"     (click)="goToPage(nextPageNumber)"    *ngIf="disableButton === false">{{nextPageNumber}}</button>
+          <button nbButton class="customPagerButton"     (click)="nextPage(currentPageNumber)" *ngIf="disableButton === false">&rsaquo;</button>   <!-- > -->
+          <button nbButton class="customPagerRightButton" *ngIf="disableButton === false">&rsaquo;&rsaquo;</button>                                <!-- >> -->
+          
+          <!--Disabled Button-->
+          <button nbButton class="customPagerButtonDisabled"       *ngIf="disableButton === true" disabled>&rsaquo;</button>                       <!-- > -->
+          <button nbButton class="customPagerRightButtonDisabled"  *ngIf="disableButton === true" disabled>&rsaquo;&rsaquo;</button>               <!-- >> -->
+        </div>
+    </nb-card-body>
+</nb-card>

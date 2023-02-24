@@ -1,0 +1,84 @@
+<nb-card>
+  <nb-card-body>
+    <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+      <nb-tabset>
+        <nb-tab tabTitle="Add New Custom Ratio" tabIcon="file-text-outline" responsive>
+          <div class="accordion-container">
+            <!--first row: Item Number,Item Name-->
+            <div class="form-row">
+              <div class="form-control-group col-md-6">
+                <label class="label col-md-12" for="input-itemno">Item Number:</label>
+                <div class="form-row col-md-12">
+                    <!-- <input nbInput fullWidth id="input-itemno" fieldSize="small" formControlName="ItemId" id="ItemId" placeholder="Item Number" onkeyup="this.value = this.value.toUpperCase();"> -->
+                    <div class="ng-autocomplete">
+                      <ng-autocomplete
+                        [data]="itemList"
+                        [searchKeyword]="keyword"
+                        placeholder="Item Id"
+                        (selected)='selectEvent($event)'
+                        formControlName="ItemId"
+                        id="input-ItemId"
+                        [itemTemplate]="itemTemplate"
+                        [notFoundTemplate]="notFoundTemplate">
+                      </ng-autocomplete>
+
+                      <ng-template #itemTemplate let-item>
+                        <a [innerHTML]="item.name"></a>
+                      </ng-template>
+
+                      <ng-template #notFoundTemplate let-notFound>
+                        <div [innerHTML]="notFound"></div>
+                      </ng-template>
+                    </div>
+                </div>
+              </div>
+
+
+            </div><!--END first row: Item Number,Item Name-->
+
+            <!--second row: Item Type,Item Group-->
+            <div class="form-row">
+
+              <div class="form-control-group col-md-6">
+                <label class="label col-md-12" for="input-stabilization">Stabilization:</label>
+                <div class="form-row col-md-12">
+                    <input nbInput fullWidth id="input-stabilization" fieldSize="small" formControlName="Stabilization" id="Stabilization" placeholder="Ratio"  onkeyup="this.value = this.value;">
+                </div>
+              </div>
+              <div class="form-control-group col-md-6">
+                <label class="label col-md-12" for="input-composite">Composite:</label>
+                <div class="form-row col-md-12">
+                  <input nbInput fullWidth id="input-composite" fieldSize="small" formControlName="Composite" id="Composite" placeholder="Ratio"  onkeyup="this.value = this.value;">
+                </div>
+              </div>
+            </div>
+            <!--END second row: Item Type,Item Group -->
+
+            <!--third row: PHR, Unit-->
+            <div class="form-row">
+              <div class="form-control-group col-md-6">
+                <label class="label col-md-12" for="input-esd">ESD : </label>
+                <div class="form-row col-md-12">
+                  <input nbInput fullWidth id="input-esd" fieldSize="small" formControlName="ESD" placeholder="Ratio">
+                </div>
+              </div>
+              <div class="form-control-group col-md-6">
+                <label class="label col-md-12" for="input-wax">Wax:</label>
+                <div class="form-row col-md-12">
+                  <input nbInput fullWidth id="input-wax" fieldSize="small" formControlName="Wax"  placeholder="Ratio" >
+                </div>
+              </div>
+            </div>
+            <!--END third row: PHR, Unit-->
+          </div>
+        </nb-tab>
+      </nb-tabset>
+    </form>
+  </nb-card-body>
+  <nb-card-footer>
+
+    <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    <button class="submit" form="mainform" type="submit" nbButton status="success"
+            [disabled]="mainForm.invalid" size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+  </nb-card-footer>
+</nb-card>

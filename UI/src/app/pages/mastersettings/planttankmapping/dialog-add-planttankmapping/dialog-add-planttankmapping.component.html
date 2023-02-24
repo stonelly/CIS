@@ -1,0 +1,47 @@
+<nb-card>
+    <nb-card-body>
+      <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+        <nb-tabset>
+          <nb-tab tabTitle="Add Plant & Tank Mapping" tabIcon="file-text-outline" responsive>
+            <div class="accordion-container">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Plant</th>
+                    <th>Mixing Tank No</th>
+                    <!--<th>Is A/B Tank</th>
+                    <th>Map To</th>--> <!--removed due to current transfer tank accept all tanks from same plant-->
+                  </tr>
+                </thead>
+                <tbody formArrayName="items">
+                  <tr *ngFor="let item of getControls('items'); let i=index" [formGroupName]="i">
+                    <!--<td><input nbInput fullWidth fieldSize="small" formControlName="Plant" placeholder="Plant"></td>-->
+                    <td>
+                        <nb-select status="primary" formControlName="Plant" (selectedChange)="onPlantSelected($event)">
+                          <nb-option *ngFor="let plant of plantList" [value]="plant.value" placeholder="Plant"> {{ plant.name }}</nb-option>
+                        </nb-select>
+                    </td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="MixingTankNo" placeholder="Mixing Tank No" onkeyup="this.value = this.value.toUpperCase();"></td>
+                    <!--<td>
+                      <nb-checkbox (checkedChange)="enableOption()" [checked]="defaultChecked"></nb-checkbox>
+                    </td>
+                    <td>
+                      <nb-select status="primary" formControlName="mappedTank"> 
+                        <nb-option *ngFor="let tank of mappedTankOptions" [value]="tank.mixingTankNo" placeholder="Tank" > {{ tank.mixingTankNo }}</nb-option>
+                      </nb-select>
+                    </td>--><!--removed due to current transfer tank accept all tanks from same plant-->
+                  </tr>
+                </tbody>
+              </table>
+            </div>      
+          </nb-tab>
+        </nb-tabset>
+      </form>
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+      <button class="submit" form="mainform" type="submit" nbButton status="success"
+              [disabled]="mainForm.invalid" size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+    </nb-card-footer>
+  </nb-card>
+  

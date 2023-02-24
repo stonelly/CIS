@@ -1,0 +1,8 @@
+{
+    "apiBaseUrl": "http://hsd-svr-0050-v:8075/api",
+    "apiBaseUrl8077": "http://hsd-svr-0050-v:8077",
+    "apiBaseUrl8076": "http://hsd-svr-0050-v:8076/api",
+    "apiLoginUrl": "http://ngc-devvm1:8086/api/login/login",    
+    "apiUrl": "https://localhost:44364",    
+    "apiUrlLocal": "http://hsd-svr-0050-v:8177"
+}

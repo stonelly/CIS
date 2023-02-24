@@ -1,0 +1,224 @@
+<nb-card>
+    <nb-card-body>
+      <div class="row col-12">
+        <div class="col-12">
+          <h4>CPD Test Result Entry for {{ selectedCPDBatch.batchNo }}</h4>
+        </div>
+      </div>
+      <br />
+      <nb-card accent="info">
+        <nb-card-header>
+          <h5>Current Compounding Stage: {{ currentStage }}</h5>
+        </nb-card-header>
+      </nb-card>
+      <nb-card class="mainCard">
+        <nb-card-body style="max-width: 1360px">
+          <form [formGroup]="phAdjustmentForm">
+            <div class="row col-12">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="input-cpdBatch" style="font-weight:bold"
+                    >CPD Batch Number</label
+                  ><br />
+                  <input
+                    nbInput
+                    readonly
+                    name="cpdBatchNo"
+                    autocomplete="off"
+                    id="input-cpdBatch"
+                    formControlName="BatchNo"
+                    placeholder="CPD Batch Number"
+                    class="input-field disabled"
+                    [class.is-invalid]="phAdjustmentForm.get('BatchNo').invalid"
+                  /><br />
+                  <div *ngIf="phAdjustmentForm.get('BatchNo').invalid">
+                    <small
+                      *ngIf="phAdjustmentForm.get('BatchNo').errors?.required"
+                      class="text-danger"
+                      >Batch No. is required</small
+                    >
+                    <small
+                      *ngIf="phAdjustmentForm.get('BatchNo').errors?.minlength"
+                      class="text-danger"
+                      >Batch No. must be at least 10 characters
+                    </small>
+                  </div>
+                </div>
+                <!--<div class="form-group">
+                  <label for="input-itemCode" style="font-weight:bold"
+                    >Item No.</label
+                  ><br />
+                  <input
+                    nbInput
+                    readonly
+                    name="itemCode"
+                    autocomplete="off"
+                    id="input-itemCode"
+                    formControlName="ItemCode"
+                    placeholder="Item No."
+                    class="input-field disabled"
+                  /><br />
+                  <div *ngIf="phAdjustmentForm.get('ItemCode').invalid">
+                    <small
+                      *ngIf="phAdjustmentForm.get('ItemCode').errors?.required"
+                      class="text-danger"
+                      >Item Code is required</small
+                    >
+                  </div>
+                </div>-->
+                <div class="form-group">
+                    <!--<label for="input-ProductType" style="font-weight:bold">Product Type</label>
+                    <br/>
+                    <input
+                      nbInput
+                      readonly="true"
+                      name="ProductType"
+                      autocomplete="off"
+                      id="input-ProductType"
+                      formControlName="ProductType"
+                      placeholder="Product Type"
+                      class="input-field disabled"
+                      style="padding-right: 0;
+                          padding-left: 0;"
+                    />
+                    <div *ngIf="phAdjustmentForm.get('ProductType').invalid">
+                      <small
+                        *ngIf="phAdjustmentForm.get('ProductType').errors?.required"
+                        class="text-danger"
+                        >Product Type is required</small
+                      >
+                    </div>-->
+                </div>
+                <div class="form-group">
+                    <label for="input-MT" style="font-weight:bold"
+                      >Mixing Tank</label
+                    ><br />
+                    <input
+                      nbInput
+                      readonly
+                      name="mixingTank"
+                      autocomplete="off"
+                      id="input-MT"
+                      formControlName="Mixing_Tank"
+                      placeholder="Mixing Tank"
+                      class="input-field disabled"
+                    /><br /><small
+                      [class.d-none]="phAdjustmentForm.get('Mixing_Tank').valid"
+                      class="text-danger"
+                      >Mixing Tank is required</small
+                    >
+                </div>
+                <div class="form-group">
+                  <label for="date" style="font-weight:bold">Date</label><br />
+                  <input
+                    id="date"
+                    autocomplete="off"
+                    class="input-field"
+                    nbInput
+                    placeholder="Select Date"
+                    formControlName="TestedOn"
+                    value="19/11/2019"
+                    type="datetime-local" 
+                    [class.is-invalid]="phAdjustmentForm.get('TestedOn').invalid"
+                    step ="1"
+                  />
+                  <br/>
+                  <small
+                    [class.d-none]="phAdjustmentForm.get('TestedOn').valid"
+                    class="text-danger"
+                    >Tested Date is required</small
+                  >
+                </div>
+                
+              </div>
+                
+                <!--<div class="form-group">
+                <label for="ProcessStage" style="font-weight:bold"
+                >QA Inspection Process</label
+              ><br />
+              <nb-radio-group>
+                <nb-radio
+                  [(value)]="currentTestStage"
+                  *ngFor="let stage of qaProcessList"
+                  [checked]="stage.IsChecked"
+                  (click)="changeProcessStage(stage.DisplayName)"
+                  >{{ stage.DisplayName }}
+                </nb-radio>
+              </nb-radio-group>
+            </div>-->
+            
+              <div class="col-6">
+                  <div class="form-group">
+                      <label for="input-pHSpec" style="font-weight:bold">
+                        pH Specification</label
+                      ><br />
+                      <input
+                        nbInput
+                        name="input-pHSpec"
+                        autocomplete="off"
+                        id="input-pHSpec"
+                        formControlName="ph_Spec"
+                        placeholder="pH Specification"
+                        class="input-field"
+                      />
+                    </div>
+                <div class="form-group">
+                  <label for="input-pH" style="font-weight:bold">pH Meter</label
+                  ><br />
+                  <input
+                    nbInput
+                    name="phMeter"
+                    autocomplete="off"
+                    id="input-pH"
+                    formControlName="phMeter"
+                    placeholder="pH Meter"
+                    class="input-field"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="input-pHResult" style="font-weight:bold">
+                    pH Result</label
+                  ><br />
+                  <input
+                    nbInput
+                    name="pHResult"
+                    autocomplete="off"
+                    id="input-pHResult"
+                    formControlName="ph_Final"
+                    placeholder="pH Result"
+                    class="input-field"
+                    type="number"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="cancel"
+              (click)="close()"
+              nbButton
+              style="float:right"
+              status="danger"
+              size="small"
+            >
+              <nb-icon icon="close"></nb-icon>Cancel
+            </button>
+
+            <button
+              class="cancel"
+              nbButton
+              status="success"
+              (click)="Submit()"
+              type="submit"
+              size="small"
+              [disabled]="phAdjustmentForm.invalid"
+              form="phAdjustmentForm"
+            >
+              <nb-icon icon="checkmark"></nb-icon>Submit
+            </button>
+            
+          </form>
+        </nb-card-body>
+      </nb-card>
+      </nb-card-body
+  ></nb-card>
+  

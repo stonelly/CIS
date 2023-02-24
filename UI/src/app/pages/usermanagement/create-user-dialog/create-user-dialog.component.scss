@@ -1,0 +1,72 @@
+@import '../../../@theme/styles/themes';
+  
+  nb-checkbox {
+    margin-bottom: 1rem;
+  }
+  
+  .cancel {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .addButton {
+    float: right;
+    margin-left: 10px;
+  }
+
+
+  .form-inline [fullWidth] {
+    flex: 1;
+  }
+  
+  :host /deep/ .cell_middle {
+    text-align: center;
+  }
+  
+  :host /deep/ ng2-smart-table tbody > tr > td {
+    font-size: .8rem;
+    padding: .5em 1em;
+  }
+  
+  :host /deep/ ng2-smart-table table tr th {
+    font-size: .8rem !important;
+  }
+  
+  :host /deep/ ng2-smart-table table tr th a {
+    font-size: .8rem !important;
+    font-weight: bold;
+  }
+  
+  .layouttitle {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  @include nb-install-component() {
+    .buttons-row {
+      margin: -0.5rem;
+    }
+  
+    button[nbButton] {
+      margin: 0.5rem;
+    }
+  
+    .action-icon {
+      @include nb-ltr(margin-right, 0.5rem);
+      @include nb-rtl(margin-left, 0.5rem);
+    }
+  
+    .actions-card {
+      height: 8rem;
+    }
+
+    .pictHeight {
+      max-height: 64px;
+    }
+
+    .pictWidth {
+      margin: 1rem;
+      max-width: 14rem;
+    }
+  }
+  
+  

@@ -1,0 +1,84 @@
+<nb-card>
+    <nb-card-body>
+      <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+        <nb-tabset>
+          <nb-tab tabTitle="Add New Item" tabIcon="file-text-outline" responsive>
+            <div class="accordion-container">              
+              <!--first row: Item Number,Item Name-->
+              <div class="form-row">
+                <div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-itemno">Item Number:</label>
+                  <div class="form-row col-md-12">
+                      <input nbInput fullWidth id="input-itemno" fieldSize="small" formControlName="ItemId" id="BOMItemID" placeholder="Item Number" onkeyup="this.value = this.value.toUpperCase();"> <!-- (focusout)="checkBOMItemName($event)"-->
+                  </div>
+                </div>
+          
+                <div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-itemname">Item Name:</label>
+                  <div class="form-row col-md-12">
+                      <input nbInput fullWidth id="input-itemname" fieldSize="small" formControlName="ItemName" placeholder="Item Name">
+                  </div>
+                </div>
+              </div><!--END first row: Item Number,Item Name-->
+              
+              <!--second row: Item Type,Item Group-->
+              <div class="form-row">
+                <div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-itemtype">Item Type:</label>
+                  <div class="form-row col-md-12">
+                    <nb-select fullWidth status="primary" formControlName="ItemType" placeholder="Item Type">
+                      <nb-option *ngFor="let types of itemTypes" [value]="types.value" > {{ types.name }}</nb-option>
+                    </nb-select>
+                  </div>
+                </div>
+          
+                <div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-itemgroup">Item Group:</label>
+                  <div class="form-row col-md-12">
+                      <!--<input nbInput fullWidth id="input-itemgroup" fieldSize="small" formControlName="ItemGroup" placeholder="Item Group">-->
+                      <nb-select fullWidth status="primary" formControlName="ItemGroup" placeholder="Item Group">
+                          <nb-option *ngFor="let group of itemGroups" [value]="group.value" > {{ group.name }}</nb-option>
+                        </nb-select>
+                  </div>
+                </div>
+              </div><!--END second row: Item Type,Item Group-->
+
+              <!--third row: PHR, Unit-->
+              <div class="form-row">
+                <!--<div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-PHR">PHR:</label>
+                  <div class="form-row col-md-12">
+                    <input nbInput fullWidth id="input-PHR" fieldSize="small" formControlName="PHR" placeholder="PHR" type="number">  
+                  </div>
+                </div>-->
+          
+                <div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-unit">Unit:</label>
+                  <div class="form-row col-md-12">
+                    <input nbInput fullWidth id="input-unit" fieldSize="small" formControlName="Unit" placeholder="Unit">
+                  </div>
+                </div>
+              </div><!--END third row: PHR, Unit-->
+
+              <!--forth row: TSC-->
+              <!--<div class="form-row">
+                <div class="form-control-group col-md-6">
+                  <label class="label col-md-12" for="input-TSC">TSC:</label>
+                  <div class="form-row col-md-12">
+                    <input nbInput fullWidth id="input-TSR" fieldSize="small" formControlName="TSC" placeholder="TSC"  type="number">
+                  </div>
+                </div>
+              </div>--><!--END forth row: TSC-->
+            </div>      
+          </nb-tab>
+        </nb-tabset>
+      </form>
+    </nb-card-body>
+    <nb-card-footer>
+      
+      <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+      <button class="submit" form="mainform" type="submit" nbButton status="success"
+              [disabled]="mainForm.invalid" size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>     
+    </nb-card-footer>
+  </nb-card>
+  

@@ -1,0 +1,253 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .addButton {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .card.custom-card {
+    overflow-x: scroll;
+  }
+}
+
+:host /deep/ .cell_right {
+  text-align: right;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table table tr th {
+  padding: .1em .1em .1em .1em;
+  vertical-align: top;
+  text-align: left; 
+}
+
+:host /deep/ ng2-smart-table table tr.ng2-smart-titles{
+  th{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+}
+
+:host /deep/ ng2-smart-table table tr.ng2-smart-titles th {
+    padding-right: 0.5rem !important; }
+  
+
+:host /deep/ ng-star-inserted {
+  padding: .1em .1em .1em .1em;
+}
+
+
+:host /deep/ ng2-smart-table table tr th a {
+  font-size: .8rem !important;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left; 
+}
+
+.layouttitle {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.customPagerDiv{
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.customPagerButton{
+  border-radius: 0 !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 0.5px 1px 0.5px !important;
+  color: #3366FF !important;
+  background-color: white !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-size: 0.875rem !important;
+}
+
+.customPagerCurrentButton{
+  border-radius: 0 !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 0.5px 1px 0.5px !important;
+  color: white !important;
+  background-color: #3366FF !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-size: 0.875rem !important;
+}
+
+.customPagerLeftButton{
+  border-radius: 2px 0px 0px 2px !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 0.5px 1px 1px !important;
+  color: #3366FF !important;
+  background-color: white !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-weight: 700 !important;
+}
+
+.customPagerRightButton{
+  border-radius: 0px 2px 2px 0px !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 1px 1px 0.5px !important;
+  color: #3366FF !important;
+  background-color: white !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-weight: 700 !important;
+}
+
+.customPagerButtonDisabled{
+  border-radius: 0 !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 0.5px 1px 0.5px !important;
+  color: #8F9BB3 !important;
+  background-color: white !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-size: 0.875rem !important;
+}
+
+.customPagerLeftButtonDisabled{
+  border-radius: 2px 0px 0px 2px !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 0.5px 1px 1px !important;
+  color: #8F9BB3 !important;
+  background-color: white !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-weight: 700 !important;
+}
+
+.customPagerRightButtonDisabled{
+  border-radius: 0px 2px 2px 0px !important;
+  border-color: #EDF1F7 !important;
+  border-width: 1px 1px 1px 0.5px !important;
+  color: #8F9BB3 !important;
+  background-color:  white !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  //font-weight: 700 !important;
+}
+
+@media only screen and (min-width: 360px) and (max-width:640px)  {
+  /*:host /deep/ .table-cpd-history {
+    //overflow-x: auto;
+    //background-color: red;
+    font-size: 8px;
+    padding: 0 0 0 0; //0.2rem 0.2rem 0.2rem 0.2rem;
+    margin: 0 0 0 0;
+    line-height: 2;
+  }*/
+
+  :host /deep/ ng2-smart-table tbody > tr > td {
+    font-size: 8px;
+    padding: .5em .5em .5em .5em;
+    vertical-align: top;
+    text-align: left;
+    //word-wrap: none !important;
+    //min-width: max-content;
+  }
+
+  :host /deep/ ng2-smart-table table tr th a {
+    font-size: 10px !important;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left; 
+  }
+
+  /*:host /deep/ .button-bom{
+    height: auto;
+    font-size: 8px;
+  }*/
+}
+/*:host /deep/ a.ng2-smart-page-link.page-link {
+height: 30px;
+width: 30px;
+text-align: center;
+vertical-align: middle;
+color: royalblue;
+font-weight: bold;
+line-height: 6px;
+}
+// selected paging number 
+:host /deep/ span.ng2-smart-page-link.page-link {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  line-height: 6px;
+  }
+  :host /deep/ span.ng2-smart-page-item.page-item.disabled {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: grey;
+  font-weight: bold;
+  line-height: 6px;
+  }
+  
+  // previous paging button
+  :host /deep/ a.ng2-smart-page-link.page-link.page-link-prev {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: royalblue;
+  font-weight: bold;
+  line-height: 6px;
+  }
+  
+  // previous paging button disabled
+  :host /deep/ span.ng2-smart-page-link.page-link.page-link-prev.disabled {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: grey;
+  font-weight: bold;
+  line-height: 6px;
+  }
+  
+  // next paging button 
+  :host /deep/ a.ng2-smart-page-link.page-link.page-link-next {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: royalblue;
+  font-weight: bold;
+  line-height: 6px;
+  }
+  
+  //next paging button 
+  :host /deep/ span.ng2-smart-page-link.page-link.page-link-next.disabled {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: grey;
+  font-weight: bold;
+  line-height: 6px;
+  }*/

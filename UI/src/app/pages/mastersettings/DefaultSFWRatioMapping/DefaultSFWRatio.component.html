@@ -1,0 +1,15 @@
+<nb-card size="large" class="table-card">
+  <nb-card-header>
+    <p>
+      Default Softwater Flush : {{sfwFlushValue}}Kg <button nbButton (click)="openEditDialog()" size="tiny"><nb-icon icon="edit" size="tiny" style="padding: 0 0 0 0;"></nb-icon></button>
+    </p>
+      </nb-card-header>
+
+
+  <nb-card-body>
+    <p>Default Softwater Ratio
+    </p>
+    <ng2-smart-table [settings]="settings" [source]="source">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

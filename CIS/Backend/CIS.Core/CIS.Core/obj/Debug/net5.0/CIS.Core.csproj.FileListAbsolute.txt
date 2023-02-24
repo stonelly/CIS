@@ -1,0 +1,325 @@
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\appsettings.Development.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\appsettings.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.exe
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.deps.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.runtimeconfig.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.runtimeconfig.dev.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\ref\CIS.Core.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.EF6.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\DelegateDecompiler.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\DelegateDecompiler.EntityFramework.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.Oracle.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.Oracle.Entity.EFCore.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\EntityFramework.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Humanizer.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Mono.Reflection.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Oracle.EntityFrameworkCore.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Oracle.ManagedDataAccess.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.CodeDom.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Diagnostics.PerformanceCounter.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.DirectoryServices.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Z.EntityFramework.Extensions.EFCore.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.BusinessLogic.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Common.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Data.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Services.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.BusinessLogic.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Common.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Data.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Services.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.AssemblyReference.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.AssemblyInfoInputs.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.AssemblyInfo.cs
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.CoreCompileInputs.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.MvcApplicationPartsAssemblyInfo.cs
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.MvcApplicationPartsAssemblyInfo.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\staticwebassets\CIS.Core.StaticWebAssets.Manifest.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\staticwebassets\CIS.Core.StaticWebAssets.xml
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\scopedcss\bundle\CIS.Core.styles.css
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.RazorTargetAssemblyInfo.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\ref\CIS.Core.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.genruntimeconfig.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.CopyComplete
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\appsettings.Development.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\appsettings.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.exe
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.deps.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.runtimeconfig.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.runtimeconfig.dev.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\ref\CIS.Core.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.EF6.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\DelegateDecompiler.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\DelegateDecompiler.EntityFramework.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.Oracle.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.Oracle.Entity.EFCore.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\EntityFramework.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Humanizer.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Mono.Reflection.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Oracle.EntityFrameworkCore.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Oracle.ManagedDataAccess.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.CodeDom.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Diagnostics.PerformanceCounter.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.DirectoryServices.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Z.EntityFramework.Extensions.EFCore.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.BusinessLogic.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Common.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Services.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.BusinessLogic.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Common.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Data.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Services.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.AssemblyReference.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.AssemblyInfoInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.AssemblyInfo.cs
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.CoreCompileInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.MvcApplicationPartsAssemblyInfo.cs
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.MvcApplicationPartsAssemblyInfo.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\staticwebassets\CIS.Core.StaticWebAssets.Manifest.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\staticwebassets\CIS.Core.StaticWebAssets.xml
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\scopedcss\bundle\CIS.Core.styles.css
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.RazorTargetAssemblyInfo.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\ref\CIS.Core.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.genruntimeconfig.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\appsettings.Development.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\appsettings.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.exe
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.deps.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.runtimeconfig.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.runtimeconfig.dev.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\ref\CIS.Core.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Core.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.EF6.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\DelegateDecompiler.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\DelegateDecompiler.EntityFramework.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.Oracle.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Devart.Data.Oracle.Entity.EFCore.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\EntityFramework.SqlServer.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\EntityFramework.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Humanizer.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Mono.Reflection.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Oracle.EntityFrameworkCore.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Oracle.ManagedDataAccess.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.CodeDom.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Diagnostics.PerformanceCounter.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.DirectoryServices.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.DirectoryServices.Protocols.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Z.EntityFramework.Extensions.EFCore.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\linux\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\osx\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.Protocols.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.BusinessLogic.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Common.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Services.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.BusinessLogic.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Common.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Data.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\CIS.Services.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.AssemblyReference.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.AssemblyInfoInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.AssemblyInfo.cs
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.csproj.CoreCompileInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.MvcApplicationPartsAssemblyInfo.cs
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.MvcApplicationPartsAssemblyInfo.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\staticwebassets\CIS.Core.StaticWebAssets.Manifest.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\staticwebassets\CIS.Core.StaticWebAssets.xml
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\scopedcss\bundle\CIS.Core.styles.css
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.RazorTargetAssemblyInfo.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\ref\CIS.Core.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\obj\Debug\net5.0\CIS.Core.genruntimeconfig.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Core\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

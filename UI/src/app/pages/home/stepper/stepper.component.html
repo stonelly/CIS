@@ -1,0 +1,224 @@
+<nb-card *ngIf="currentstepper !== 'latex' && currentstepper !== 'stabilization' && currentstepper !== 'composite' && currentstepper !== 'aquawax' && currentstepper !== 'pigment'" class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">Test</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Test 1</ng-template>
+        <h3>Test 1</h3>
+        <button nbButton disabled nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Test 2</ng-template>
+        <h3>Test 2</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Test 3">
+        <h3>Test 3</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+<nb-card *ngIf="currentstepper === 'latex'" class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">Latex</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Nitrile Latex-Nipol Lx559L</ng-template>
+        <h3>Nitrile Latex-Nipol Lx559L</h3>
+        <button nbButton disabled nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Soft Water</ng-template>
+        <h3>Soft Water</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water (Flushing)">
+        <h3>Soft Water (Flushing)</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+<nb-card *ngIf="currentstepper === 'stabilization'" class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">Stabilization</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Agwet HT</ng-template>
+        <h3>Agwet HT</h3>
+        <button nbButton disabled nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Soft Water</ng-template>
+        <h3>Soft Water</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water (Flushing)">
+        <h3>Soft Water (Flushing)</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+<nb-card *ngIf="currentstepper === 'composite'" class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">Composite</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Octocure HCLP-60(YS)</ng-template>
+        <h3>Octocure HCLP-60(YS)</h3>
+        <button nbButton disabled nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Octocure ZDE 50</ng-template>
+        <h3>Octocure ZDE 50</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Octotint 705">
+        <h3>Octotint 705</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Octocure 573">
+        <h3>Octocure 573</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water">
+        <h3>Soft Water</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water (Flushing)">
+        <h3>Soft Water (Flushing)</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+<nb-card *ngIf="currentstepper === 'aquawax'" class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">Wax</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Aquawax 48</ng-template>
+        <h3>Aquawax 48</h3>
+        <button nbButton disabled nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Soft Water</ng-template>
+        <h3>Soft Water</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water (Flushing)">
+        <h3>Soft Water (Flushing)</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+<nb-card *ngIf="currentstepper === 'pigment'" class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">Wax</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Pigment - BLU MPV 1340</ng-template>
+        <h3>Pigment - BLU MPV 1340</h3>
+        <button nbButton disabled nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Soft Water</ng-template>
+        <h3>Soft Water</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water (Flushing)">
+        <h3>Soft Water (Flushing)</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>
+
+<!--<nb-card class="col-md-12 col-lg-12 col-xxxl-12">
+  <nb-card-header>
+    <span class="layouttitle">{{currentstage}}</span>
+    <span class="textdetails">Batch No: {{currentbatchno}}</span>
+    <span class="textdetails2">Line: {{currentline}}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper orientation="horizontal">
+      <nb-step [label]="labelOne">
+        <ng-template #labelOne>Pigment - BLU MPV 1340</ng-template>
+        <h3>Pigment - BLU MPV 1340</h3>
+        <button nbButton disabled nbStepperPrevious>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step [label]="labelTwo">
+        <ng-template #labelTwo>Soft Water</ng-template>
+        <h3>Soft Water</h3>
+        <button nbButton nbStepperPrevious><nb-icon icon="skip-back"></nb-icon>prev</button>
+        <button nbButton nbStepperNext><nb-icon icon="skip-forward"></nb-icon>next</button>
+      </nb-step>
+      <nb-step label="Soft Water (Flushing)">
+        <h3>Soft Water (Flushing)</h3>
+        <button nbButton nbStepperPrevious>prev</button>
+        <button nbButton type="submit" status="danger" (click)="submitFail()"><nb-icon icon="close"></nb-icon>Fail</button>
+        <button nbButton type="submit" status="success" (click)="submitPass()"><nb-icon icon="checkmark"></nb-icon>Pass</button>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>-->

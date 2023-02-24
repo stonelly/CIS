@@ -1,0 +1,33 @@
+@import '../../styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .menu-sidebar ::ng-deep .scrollable {
+    padding-top: nb-theme(layout-padding-top);
+  }
+
+  .nb-theme-default .nb-layout ::ng-deep ::-webkit-scrollbar {
+    width: 0.3125rem;
+    height: 2.3125rem;
+  }
+  ::-webkit-scrollbar ::ng-deep {
+    width: nb-theme(scrollbar-width) !important;
+    height: nb-theme(scrollbar-width) 2 !important;;
+  }
+}
+
+
+@media print {
+  .layout-header, .layout-footer, .menu-sidebar{
+    display: none;
+  }
+
+  .layout-content{
+    height: 0rem;
+  }
+
+  .menu-sidebar ::ng-deep .scrollable {
+    display: none;
+  }
+}

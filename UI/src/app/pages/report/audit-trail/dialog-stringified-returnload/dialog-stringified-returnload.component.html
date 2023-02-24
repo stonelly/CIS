@@ -1,0 +1,13 @@
+<nb-card class="setHeight">
+    <nb-card-header>{{titleText}}</nb-card-header>
+    
+    <nb-card-body>
+        <pre>{{ JSONobj | json }}</pre>
+        <!--{{JSONobj}}-->
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="cancel" nbButton status="danger" (click)="close()" size="small"><nb-icon icon="close"></nb-icon>Close</button>
+    </nb-card-footer>
+</nb-card>
+
+

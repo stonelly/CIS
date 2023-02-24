@@ -1,0 +1,38 @@
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.BusinessLogic.deps.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.BusinessLogic.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\ref\CIS.BusinessLogic.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.BusinessLogic.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Common.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Services.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Data.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Services.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Common.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.csproj.AssemblyReference.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.AssemblyInfoInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.AssemblyInfo.cs
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\ref\CIS.BusinessLogic.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.csproj.CopyComplete
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.BusinessLogic.deps.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.BusinessLogic.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\ref\CIS.BusinessLogic.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.BusinessLogic.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Common.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Services.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Data.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Services.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\bin\Release\net5.0\CIS.Common.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.csproj.AssemblyReference.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.AssemblyInfoInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.AssemblyInfo.cs
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\ref\CIS.BusinessLogic.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.BusinessLogic\obj\Release\net5.0\CIS.BusinessLogic.csproj.CopyComplete

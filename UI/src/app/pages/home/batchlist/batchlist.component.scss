@@ -1,0 +1,102 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .addButton {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .syncButton {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .card.custom-card {
+    overflow-x: scroll;
+  }
+}
+
+:host /deep/ .cell_right {
+  text-align: right;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table table tr th {
+  padding: .1em .1em .1em .1em;
+  vertical-align: top;
+  text-align: left; 
+}
+
+:host /deep/ ng2-smart-table table tr.ng2-smart-titles{
+  th{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+}
+
+:host /deep/ ng2-smart-table table tr.ng2-smart-titles th {
+    padding-right: 0.5rem !important; }
+  
+
+:host /deep/ ng-star-inserted {
+  padding: .1em .1em .1em .1em;
+}
+
+
+:host /deep/ ng2-smart-table table tr th a {
+  font-size: .8rem !important;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left; 
+}
+
+.layouttitle {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 360px) and (max-width:640px)  {
+  .addButton {
+    font-size: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+  }
+
+  .syncButton {
+    font-size: 0 !important;
+    overflow:hidden !important;
+    visibility: hidden !important;
+  }
+  
+
+  /*:host /deep/ ng2-smart-table table{
+    font-size: 8px;
+    display: table;
+  }*/
+  /* grid lines */
+  :host /deep/ ng2-smart-table tbody > tr > td {
+    font-size: 8px;
+    padding: .5em .5em .5em .5em;
+    vertical-align: top;
+    text-align: left;
+    //word-wrap: none !important;
+    //min-width: max-content;
+  }
+
+
+  :host /deep/ ng2-smart-table table tr th a {
+    font-size: 10px !important;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left; 
+  }
+}

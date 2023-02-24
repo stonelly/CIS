@@ -1,0 +1,137 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  button[nbTreeGridRowToggle] {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .addbom {
+    margin-right: 5px;
+  }
+
+  .nodata {
+    text-align: center;
+  }
+
+  .layouttitle {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .backButton {
+    float: right;
+  }
+
+  .search-label {
+    display: block;
+  }
+  .search-input {
+    margin-bottom: 1rem;
+  }
+
+  .nb-column-name {
+    width: 100%;
+  }
+
+  ::ng-deep .row-toggle-button {
+    color: nb-theme(text-basic-color);
+  }
+
+  .nb-tree-grid-header-cell,
+  .nb-tree-grid-header-cell button {
+    text-transform: capitalize;
+  }
+
+  /*@media screen and (min-width: 400px) {
+    .nb-column-name,
+    .nb-column-size {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .nb-column-name,
+    .nb-column-size,
+    .nb-column-kind {
+      width: 33.333%;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .nb-column-name {
+      width: 31%;
+    }
+    .nb-column-size,
+    .nb-column-kind,
+    .nb-column-items {
+      width: 23%;
+    }
+  }*/
+}
+
+:host /deep/ .bomdetails {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+:host /deep/ .bomtable {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  width: 100%;
+}
+
+:host /deep/ .left-column
+{
+  width: 1px;
+  white-space: nowrap;
+}
+
+/*:host /deep/ .custom-card {
+  //overflow-x: auto !important;
+  background-color: red;
+}*/
+
+@media only screen and (min-width: 360px) and (max-width:640px)  {
+  :host /deep/ .custom-card {
+    //overflow-x: auto;
+    //background-color: red;
+    font-size: 8px;
+    padding: 0 0 0 0; //0.2rem 0.2rem 0.2rem 0.2rem;
+    margin: 0 0 0 0;
+    line-height: 2;
+  }
+
+  :host /deep/ .custom-card-direct-chemical-header {
+    font-size: 8px;
+    word-wrap: none;
+    padding: 0 0 0 0;//0.2rem 0.2rem 0.2rem 0.2rem;
+    margin: 0 0 0 0;
+    line-height: 2;
+  }
+
+  :host /deep/ .custom-card-direct-chemical {
+    font-size: 8px;
+    word-wrap: none;
+    padding: 0 0 0 0;//0.2rem 0.2rem 0.2rem 0.2rem;
+    margin: 0 0 0 0;
+    line-height: 2;
+  }
+  
+  :host /deep/ .bomtable {
+    font-weight: bold;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  :host /deep/ .chemical-icon{
+    //visibility: hidden;
+    display: none;
+    width: 0rem;
+    height: 0rem;
+    padding-left: 0.2rem;
+  }
+}

@@ -1,0 +1,16 @@
+<nb-card>
+    <nb-card-header>
+        Select {{currentStage}} Item
+    </nb-card-header>
+    <nb-card-body>
+        <nb-select status="primary" formControlName="StageId">
+            <!--<nb-option *ngFor="let stage of bomstages" [value]="stage.value" > {{ stage.name }}</nb-option>-->
+            <nb-option>NA</nb-option>
+        </nb-select>
+    </nb-card-body>
+    <nb-card-footer>
+      <button class="submit" form="mainform" type="submit" nbButton status="success"
+               size="small"><nb-icon icon="checkmark"></nb-icon>Add</button><!--//[disabled]="mainForm.invalid"-->
+      <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    </nb-card-footer>
+</nb-card>

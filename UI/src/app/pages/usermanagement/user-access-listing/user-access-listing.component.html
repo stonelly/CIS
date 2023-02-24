@@ -1,0 +1,12 @@
+<nb-card ><!--class="custom-card"-->
+    <nb-card-header>
+      <span class="align-middle">User Access</span>
+      <span class="buttonRight"><button nbButton (click)="openDialog()">Add User</button></span>
+      <!--<span class="buttonRight"><button nbButton (click)="openCreateUser($event)">Add User</button></span>-->
+    </nb-card-header>
+  
+    <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="source" (edit)="accessUserPage($event)" (deleteConfirm)="onDeleteConfirm($event)">
+      </ng2-smart-table>
+    </nb-card-body>
+  </nb-card>

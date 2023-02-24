@@ -1,0 +1,50 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .addButton {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .deleteButton {
+    float: right;
+    margin-right: 5px;
+  }
+}
+
+:host /deep/ .cell_middle {
+  text-align: center;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table table tr th {
+  padding: .1em .1em .1em .1em;
+  vertical-align: top;
+  text-align: left; 
+}
+
+:host /deep/ ng2-smart-table table tr th a {
+  font-size: .8rem !important;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left; 
+}
+
+:host /deep/ ng-star-inserted {
+  padding: .1em .1em .1em .1em;
+}
+
+.layouttitle {
+  font-weight: bold;
+  font-size: 1.3em;
+}

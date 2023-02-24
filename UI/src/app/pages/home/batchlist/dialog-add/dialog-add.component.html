@@ -1,0 +1,184 @@
+<nb-card>
+  <nb-card-body>
+    <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+      <nb-tabset id="resultTable">
+        <nb-tab formGroupName="batchorder" tabTitle="Batch Order Details" tabIcon="file-remove-outline" responsive>
+          <h6>Enter batch order details</h6>
+          <div class="form-control-group">
+            <label class="label" for="input-plant">Plant:</label>
+            <input nbInput
+                  fullWidth
+                  formControlName="plant"
+                  id="input-plant"
+                  >
+          </div>
+    
+          <div class="form-control-group">
+            <label class="label" for="input-cpdbatchno">CPD Batch Number:</label>
+            <input nbInput
+                    fullWidth
+                    formControlName="cpdbatchno"
+                    id="input-cpdbatchno"
+                    placeholder="CPD Batch Number">
+          </div>
+          <div class="error" *ngIf="mainForm.get('batchorder').get('cpdbatchno').touched && mainForm.get('batchorder').get('cpdbatchno').hasError('required')">
+            CPD Batch Number is required!
+          </div>
+    
+          <div class="form-control-group">
+              <label class="label" for="input-itemno">Item Number:</label>
+              <input nbInput
+                  fullWidth
+                  formControlName="itemno"
+                  id="input-itemno"
+                  placeholder="Item Number">
+          </div>
+          <div class="error" *ngIf="mainForm.get('batchorder').get('itemno').touched && mainForm.get('batchorder').get('itemno').hasError('required')">
+            Item Number is required!
+          </div>
+    
+          <div class="form-control-group">
+            <label class="label" for="input-producttype">Product Type:</label>
+            <input nbInput
+                    fullWidth
+                    formControlName="producttype"
+                    id="input-producttype"
+                    placeholder="Product Type">
+          </div>
+          <div class="error" *ngIf="mainForm.get('batchorder').get('producttype').touched && mainForm.get('batchorder').get('producttype').hasError('required')">
+            Product Type is required!
+          </div>
+    
+          <div class="form-control-group">
+            <label class="label" for="input-quantity">Quantity (kg):</label>
+            <input nbInput
+                    fullWidth
+                    formControlName="quantity"
+                    id="input-quantity"
+                    placeholder="Quantity (kg)">
+          </div>
+          <div class="error" *ngIf="mainForm.get('batchorder').get('quantity').touched && mainForm.get('batchorder').get('quantity').hasError('required')">
+            Quantity is required!
+          </div>
+        </nb-tab>
+        <nb-tab tabTitle="BOM Details" tabIcon="file-text-outline" responsive>
+          <h6>Enter BOM details</h6>
+          <div class="accordion-container">
+            <nb-accordion multi>
+              <nb-accordion-item>
+                <nb-accordion-item-header>
+                  Stabilization
+                </nb-accordion-item-header>
+                <nb-accordion-item-body formGroupName="stabilization">
+                  <div class="form-control-group">
+                    <nb-select formControlName="selectedItem">
+                      <nb-option value="0">Agwet HT</nb-option>
+                      <nb-option value="1">Soft Water</nb-option>
+                      <nb-option value="2">Soft Water (Flushing)</nb-option>
+                    </nb-select>
+                  </div>
+                  <br>
+                  <div formArrayName="items">
+                    <div *ngFor="let item of getControls('stabilization'); let i=index">
+                      <div [formGroupName]="i" [hidden]="selectedValue1 != i">
+                        <div class="form-control-group">
+                          <label class="label" for="itembatchno">Batch No:</label>
+                          <input nbInput fullWidth formControlName="itembatchno" placeholder="Batch No">
+                        </div>
+                        <div class="form-control-group">
+                          <label class="label" for="targetweight">Target Weight:</label>
+                          <input nbInput fullWidth formControlName="targetweight" placeholder="Target Weight">
+                        </div>
+                        <div class="form-control-group">
+                          <label class="label" for="actualweight">Actual Weight:</label>
+                          <input nbInput fullWidth formControlName="actualweight" placeholder="Actual Weight">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nb-accordion-item-body>
+              </nb-accordion-item>
+        
+              <nb-accordion-item>
+                <nb-accordion-item-header>
+                  Composite
+                </nb-accordion-item-header>
+                <nb-accordion-item-body formGroupName="composite">
+                  <div class="form-control-group">
+                    <nb-select formControlName="selectedItem">
+                      <nb-option value="0">Octocure HCLP-60(YS)</nb-option>
+                      <nb-option value="1">Octocure ZDE 50</nb-option>
+                      <nb-option value="2">Octotint 705</nb-option>
+                      <nb-option value="3">Octocure 573</nb-option>
+                      <nb-option value="4">Soft Water</nb-option>
+                      <nb-option value="5">Soft Water (Flushing)</nb-option>
+                    </nb-select>
+                  </div>
+                  <br>
+                  <div formArrayName="items">
+                    <div *ngFor="let item of getControls('composite'); let i=index">
+                      <div [formGroupName]="i" [hidden]="selectedValue2 != i">
+                        <div class="form-control-group">
+                          <label class="label" for="itembatchno">Batch No:</label>
+                          <input nbInput fullWidth formControlName="itembatchno" placeholder="Batch No">
+                        </div>
+                        <div class="form-control-group">
+                          <label class="label" for="targetweight">Target Weight:</label>
+                          <input nbInput fullWidth formControlName="targetweight" placeholder="Target Weight">
+                        </div>
+                        <div class="form-control-group">
+                          <label class="label" for="actualweight">Actual Weight:</label>
+                          <input nbInput fullWidth formControlName="actualweight" placeholder="Actual Weight">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nb-accordion-item-body>
+              </nb-accordion-item>
+        
+              <nb-accordion-item>
+                <nb-accordion-item-header>
+                  Wax
+                </nb-accordion-item-header>
+                <nb-accordion-item-body formGroupName="wax">
+                  <div class="form-control-group">
+                    <nb-select formControlName="selectedItem">
+                      <nb-option value="0">Aquawax 48</nb-option>
+                      <nb-option value="1">Soft Water</nb-option>
+                      <nb-option value="2">Soft Water (Flushing)</nb-option>
+                    </nb-select>
+                  </div>
+                  <br>
+                  <div formArrayName="items">
+                    <div *ngFor="let item of getControls('wax'); let i=index">
+                      <div [formGroupName]="i" [hidden]="selectedValue3 != i">
+                        <div class="form-control-group">
+                          <label class="label" for="itembatchno">Batch No:</label>
+                          <input nbInput fullWidth formControlName="itembatchno" placeholder="Batch No">
+                        </div>
+                        <div class="form-control-group">
+                          <label class="label" for="targetweight">Target Weight:</label>
+                          <input nbInput fullWidth formControlName="targetweight" placeholder="Target Weight">
+                        </div>
+                        <div class="form-control-group">
+                          <label class="label" for="actualweight">Actual Weight:</label>
+                          <input nbInput fullWidth formControlName="actualweight" placeholder="Actual Weight">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nb-accordion-item-body>
+              </nb-accordion-item>
+            </nb-accordion>
+          </div>
+        </nb-tab>
+      </nb-tabset>
+    </form>  
+    <!-- <button class="addbom" nbButton (click)="openModal()">Add BOM</button> <div class="labelstatus">Is BOM added: {{isBomAdded}}</div> -->
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="submit" form="mainform" type="submit" nbButton status="success" [disabled]="mainForm.invalid" size="small">
+      <nb-icon icon="checkmark"></nb-icon>Submit</button>
+    <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+  </nb-card-footer>
+</nb-card>

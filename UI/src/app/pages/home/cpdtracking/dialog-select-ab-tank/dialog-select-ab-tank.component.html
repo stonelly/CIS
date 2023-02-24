@@ -1,0 +1,25 @@
+<nb-card>
+    <nb-card-header>
+      <h6>Select Transfer Tank</h6>
+    </nb-card-header>
+    <nb-card-body>
+        <div class="demo-items">
+          <!--<nb-checkbox checked>Mixing Tank A</nb-checkbox>
+             <!--<nb-radio value="A">Mixing Tank A</nb-radio>
+            <nb-radio value="B">Mixing Tank B</nb-radio>
+          <nb-checkbox>Mixing Tank B</nb-checkbox>-->
+          <!--<nb-radio-group [(value)]="radioGroupValue" *ngFor = "let tank of tankList">
+           
+            <nb-radio [value]="tank.tankId">{{ tank.tankName}}</nb-radio>
+          </nb-radio-group>-->
+          <nb-select status="primary" fullWidth [(selected)]="transferTankValue">
+            <nb-option *ngFor="let tank of tankList" [value]="tank.tankId" class="col-sm-12" fullWidth> {{tank.tankName}}</nb-option>
+        </nb-select>
+        </div>
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+        <button class="submit" (click)="onSubmit()" type="submit" nbButton status="success"
+                 size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+    </nb-card-footer>
+</nb-card>

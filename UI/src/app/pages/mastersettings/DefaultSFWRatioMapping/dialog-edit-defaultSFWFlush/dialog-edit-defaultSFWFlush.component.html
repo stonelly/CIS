@@ -1,0 +1,25 @@
+<nb-card>
+  <nb-card-header>Update Default Software Ratio</nb-card-header>
+  <nb-card-body>
+    <div class="col-md-12">
+      <form
+        novalidate
+        id="mainform"
+        (ngSubmit)="onSubmit()"
+        [formGroup]="mainForm"
+      >
+
+      <div class="form-group row">
+        <label for="inputRatio" class="label col-sm-4 col-form-label">Default Softwater Flush</label>
+        <div class="col-sm-8">
+          <input type="text" nbInput fullWidth id="inputRatio" placeholder="Default Softwater Flush" formControlName="SFWFlushValue" required (change)="checkValueChange($event)">
+        </div>
+      </div>
+
+    </form>
+    </div>
+    <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    <button class="addButton" form="mainform" type="submit" nbButton status="success"
+             size="small" [disabled]="disableSubmit" ><nb-icon icon="checkmark"></nb-icon>Submit</button>
+  </nb-card-body>
+</nb-card>

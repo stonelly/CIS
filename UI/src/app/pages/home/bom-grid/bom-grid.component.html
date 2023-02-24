@@ -1,0 +1,57 @@
+<nb-card>
+  <nb-card-header>
+    <span class="layouttitle">BOM</span><button class="backButton" nbButton (click)="backClicked()" size="small"><nb-icon icon="arrow-back"></nb-icon>Back</button> 
+    <div class="bomdetails">
+        <p style="text-align:center; font-weight:bold">{{batchno}}</p>
+        <!--<p style="text-align:center; font-weight:bold">KUMHO KNL 830</p>-->
+        <table class="bomtable">
+          <tr>
+            <td class="left-column">Product Type</td>
+            <!-- <td>: NB-AB-PF-38-SE-GREY</td> -->
+            <td>: {{producttype}}</td>
+            <td class="left-column">Prepared By</td>
+            <td>: {{createdby}}</td><!--: ARISWANTO (hardcoded)-->
+          </tr>
+          <tr>
+            <td class="left-column">Compounding Date/Time</td>
+            <td>: {{startCompoundingDate}}</td> <!--: 9:33 AM 14 April 2019 (hardcoded)-->
+            <td class="left-column">Tank No</td>
+            <td>: {{tankno}}</td>
+          </tr>
+        </table>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <div class="nodata" *ngIf="isDataEmpty; else showData">
+      <p>No record found for the batch number, {{batchno}}</p>
+      <!--<button class="addbom" type="submit" (click)="addBom()" nbButton><nb-icon icon="plus"></nb-icon>Add BOM</button>
+      <button class="addbom" type="submit" (click)="addBom2()" nbButton><nb-icon icon="plus"></nb-icon>Add BOM 2</button>-->
+    </div>
+      <ng-template #showData>
+        <table [nbTreeGrid]="dataSource" [nbSort]="dataSource" (sort)="updateSort($event)">
+          <tr nbTreeGridHeaderRow *nbTreeGridHeaderRowDef="allColumns"></tr> <!-- class="custom-card"-->
+          <tr nbTreeGridRow *nbTreeGridRowDef="let row; columns: allColumns"></tr> <!-- class="custom-card"-->
+    
+          <ng-container [nbTreeGridColumnDef]="customColumn">
+            <th nbTreeGridHeaderCell [nbSortHeader]="getSortDirection(customColumn)" *nbTreeGridHeaderCellDef class="custom-card-direct-chemical-header"> <!-- class="custom-card"-->
+              {{customColumn}}
+            </th>
+            <td nbTreeGridCell *nbTreeGridCellDef="let row" class="custom-card-direct-chemical"> <!-- class="custom-card"-->
+              <ngx-fs-icon [kind]="row.data.kind" [expanded]="row.expanded"></ngx-fs-icon>
+              {{row.data[customColumn]}}
+            </td>
+          </ng-container>
+    
+          <ng-container *ngFor="let column of defaultColumns; let index = index"
+                        [nbTreeGridColumnDef]="column"
+                        <!--[showOn]="getShowOn(index)"-->
+                        >
+            <th nbTreeGridHeaderCell [nbSortHeader]="getSortDirection(column)" *nbTreeGridHeaderCellDef class="custom-card"> <!-- class="custom-card"-->
+              {{column}}
+            </th>
+            <td style="text-align: right;" nbTreeGridCell *nbTreeGridCellDef="let row" class="custom-card">{{row.data[column] || ''}}</td> <!-- class="custom-card"-->
+          </ng-container>
+        </table>
+      </ng-template>
+  </nb-card-body>
+</nb-card>

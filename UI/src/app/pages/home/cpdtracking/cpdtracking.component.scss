@@ -1,0 +1,207 @@
+@import '../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .refreshButton {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .table-card,
+  .chart-card {
+    box-shadow: none;
+    margin-bottom: 0;
+    border-width: 0;
+  }
+
+  .table-card {
+    flex: 0 0 auto;
+  }
+
+  .chart-card {
+    flex: 1 0 auto;
+  }
+
+  .chart-card nb-card-header {
+    display: flex;
+    align-items: center;
+    padding-top: nb-theme(card-header-with-select-padding-top);
+    padding-bottom: nb-theme(card-header-with-select-padding-bottom);
+
+    // prevents double border from chart yAxisSplitLine
+    margin-bottom: -1px;
+  }
+
+  .type-select {
+    margin-left: auto;
+  }
+
+  .stats {
+    margin-right: 1rem;
+
+    > .caption {
+      display: block;
+    }
+  }
+
+  nb-tabset {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  nb-tab {
+    padding: 0;
+  }
+
+  nb-list-item {
+    display: flex;
+    align-items: baseline;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .month {
+    width: 2rem;
+  }
+
+  nb-icon.down {
+    color: nb-theme(color-danger-default);
+  }
+
+  nb-icon.up {
+    color: nb-theme(color-success-default);
+  }
+
+  .results {
+    margin-left: auto;
+  }
+
+  @include media-breakpoint-down(xl) {
+    .table-card {
+      display: none;
+    }
+  }
+
+  @media print{
+    .do-not-print{
+      display: none;
+    }
+  }
+}
+
+//Uncomment this if Latex until Wax are not "NA"
+/*:host /deep/ ng2-smart-table table tr th a {
+  font-size: .8rem !important;
+  //padding: 0em 0em 0em 0em;
+  //padding: .5em .5em .5em .5em;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table table tr th {
+  //font-size: .8rem !important;
+  //padding: 0em 0em 0em 0em;
+  padding: .1em .1em .1em .1em;
+  //padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: 0.5em 0.2em 0.5em 0.2em;
+  //padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}*/
+
+::-webkit-scrollbar {
+  height: 20px !important;;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray !important;
+  border-radius: 5px / 2 !important;;
+}
+
+::-webkit-scrollbar-track {
+  background: gray;
+}
+
+.layouttitle {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+//Comment this if Latex until Wax are "NA"
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table table tr th {
+  padding: .1em .1em .1em .1em;
+  vertical-align: top;
+  text-align: left; 
+}
+
+:host /deep/ ng2-smart-table table tr.ng2-smart-titles{
+  th{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+}
+
+:host /deep/ ng2-smart-table table tr.ng2-smart-titles th {
+    padding-right: 0.5rem !important; }
+
+:host /deep/ ng2-smart-table table tr th a {
+  font-size: .8rem !important;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left; 
+}
+
+
+@media only screen and (min-width: 360px) and (max-width:640px)  {
+  .refreshButton {
+    font-size: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+  }
+  
+
+  /*:host /deep/ ng2-smart-table table{
+    font-size: 8px;
+    display: table;
+  }*/
+  /* grid lines */
+  :host /deep/ ng2-smart-table tbody > tr > td {
+    font-size: 8px;
+    padding: .5em .5em .5em .5em;
+    vertical-align: top;
+    text-align: left;
+    //word-wrap: none !important;
+    //min-width: max-content;
+  }
+
+
+  :host /deep/ ng2-smart-table table tr th a {
+    font-size: 10px !important;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left; 
+  }
+}

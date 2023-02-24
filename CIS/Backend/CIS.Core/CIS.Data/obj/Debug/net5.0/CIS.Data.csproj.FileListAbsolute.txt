@@ -1,0 +1,44 @@
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.deps.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.runtimeconfig.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.runtimeconfig.dev.json
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\ref\CIS.Data.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.AssemblyInfoInputs.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.AssemblyInfo.cs
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.csproj.CoreCompileInputs.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\ref\CIS.Data.dll
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.pdb
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.genruntimeconfig.cache
+C:\Project\EwareNavi Check In Point\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.csproj.AssemblyReference.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.deps.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.runtimeconfig.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.runtimeconfig.dev.json
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\ref\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.AssemblyInfoInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.AssemblyInfo.cs
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.csproj.CoreCompileInputs.cache
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\ref\CIS.Data.dll
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.pdb
+C:\Project\EwareNaviCIS\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.genruntimeconfig.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.deps.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.runtimeconfig.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.runtimeconfig.dev.json
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\ref\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\bin\Debug\net5.0\CIS.Data.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.csproj.AssemblyReference.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.AssemblyInfoInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.AssemblyInfo.cs
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.csproj.CoreCompileInputs.cache
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\ref\CIS.Data.dll
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.pdb
+C:\TFS\Industry 4.0\CheckInStation\CIS\Backend\CIS.Core\CIS.Data\obj\Debug\net5.0\CIS.Data.genruntimeconfig.cache

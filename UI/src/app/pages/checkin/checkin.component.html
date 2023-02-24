@@ -1,0 +1,65 @@
+
+ 
+      <nb-card>
+        <nb-card-header>Check In</nb-card-header>
+        <nb-card-body>
+        <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm">
+          <div  formArrayName="items">
+            <div *ngFor="let item of getControls('items'); let i=index" [formGroupName]="i"> 
+              <div class="form-group row" >
+                <label for="inputPalletID" class="label col-sm-2 col-form-label">Pallet ID</label>
+                <div class="col-sm-10">
+                  <input type="text" nbInput fullWidth formControlName="inputPalletID" oninput="this.value = this.value.toUpperCase()" placeholder="Pallet ID" (blur)="onPalletChange($event)">
+                  <span [ngStyle]="{color: palletErrorMessage === 'Validated'? 'green' : 'red'}" ng-if="palletErrorMessage">   {{palletErrorMessage}}  </span>  
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmployeeID" class="label col-sm-2 col-form-label">Employee ID</label>
+                <div class="col-sm-10">
+                  <input type="text" nbInput fullWidth formControlName="inputEmployeeID" placeholder="Employee ID" (blur)="onEmployeeIdChange($event)">
+                  <span [ngStyle]="{color: employeeValidationMessage === 'Validated'? 'green' : 'red'}" ng-if="employeeValidationMessage">   {{employeeValidationMessage}}  </span>                
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputWarehouse" class="label col-sm-2 col-form-label">Scan in Warehouse</label>
+                <div class="col-sm-10">
+                  <input type="text" nbInput fullWidth formControlName="inputWarehouse" placeholder="Warehouse" readonly [value]="warehouse">
+                  <span *ngIf="isNoWarehouse" [ngStyle]="{color:'red'}"> No warehouse assigned for this IP address. Please contact Administrator!  </span> 
+                </div>
+              </div>
+              <!-- <div class="form-group row" [ngStyle]="{display : isMTS ? 'block' : 'none'}">
+                <label for="binLocationId" class="label col-sm-2 col-form-label">Bin Location</label>               
+                <nb-select class="label col-sm-10" placeholder="Select Bin Location"  status="primary" 
+                  formControlName="binLocationId" (selectedChange)="onLocationSelected($event)">
+                  <nb-option *ngFor="let location of binLocationList" [value]="location.binId" placeholder="Bin Location"> {{ location.binLocationName }}</nb-option>
+                </nb-select>                
+              </div> -->
+              <div class="form-group row" [ngStyle]="{display : isMTO ? 'block' : 'none'}">
+                <span  class="label col-sm-2 col-form-label" [ngStyle]="{color: 'green'}">MTO</span>        
+              </div>
+              <div class="form-group row" [ngStyle]="{display : isMTS ? 'block' : 'none'}">
+                <span  class="label col-sm-2 col-form-label" [ngStyle]="{color: 'green'}">MTS</span>        
+              </div>
+              <div class="form-group row">
+                <div class="offset-sm-10 col-sm-2">
+                  <button class="submit" form="mainform" type="submit" nbButton status="success"
+                  [disabled]="isNotValid" size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+                </div>
+              </div>
+          </div>
+          </div>
+          </form>
+          <div [ngStyle]="{display : isMTO ? 'block' : 'none'}">
+            <ng2-smart-table [settings]="settings" [source]="source" fullWidth>
+            </ng2-smart-table>
+          </div>
+          <div [ngStyle]="{display : isMTS ? 'block' : 'none'}">
+            <ng2-smart-table [settings]="settingsMTS" [source]="sourceMTS" fullWidth>
+            </ng2-smart-table>
+          </div>
+        </nb-card-body>
+        <nb-card-footer>
+        </nb-card-footer>
+      </nb-card>
+  
+ 

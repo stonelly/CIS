@@ -1,0 +1,16 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+:host /deep/ .cell_right {
+  text-align: right;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: .5em 1em;
+}

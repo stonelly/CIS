@@ -1,0 +1,13 @@
+<nb-card>
+    <nb-card-header>
+      BOM
+      <p style="text-align:center; font-weight:bold">1050-(GREY)T47C-MT47B</p>
+      <p style="text-align:center; font-weight:bold">KUMHO KNL 830</p>
+    </nb-card-header>
+  
+    <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+      </ng2-smart-table>
+    </nb-card-body>
+  </nb-card>
+  

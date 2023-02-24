@@ -1,0 +1,9 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .close  {
+    float: right;
+    margin-right: 5px;
+  }
+
+}

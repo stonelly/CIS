@@ -1,0 +1,82 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .cancel {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .submit {
+    float: right;
+  }
+
+  .mainCard{
+    min-width: 800px !important;
+  }
+
+  ::-webkit-scrollbar {
+    height: 20px !important;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .input-icon-wrap {
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-icon {
+    background: #ddd;
+  }
+
+  .input-with-icon {
+    border: none;
+    flex: 1;
+  }
+
+  .input-icon, .input-with-icon {
+    padding: 10px;
+  }
+
+  .input-field {
+    width: 250px !important;
+  }
+  .nxtStepBtn {
+    float: right;
+  }
+  .table_input-field{
+    max-width: 180px;
+  }
+  .col-4{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .sample_TH{
+    width: 100px !important;
+  }
+
+  .disabled {
+    color: gray;
+  }
+
+  .cancel {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .submit {
+    float: right;
+  }
+}

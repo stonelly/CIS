@@ -1,0 +1,439 @@
+<nb-card class="warning-card" [hidden]="!hidePostToD365Section">
+  <nb-card-header><h6>Please perform Final Verification on CPD QA first.</h6></nb-card-header>
+  <nb-card-footer>
+    <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Close</button>
+    </nb-card-footer>
+</nb-card>
+<nb-card class="setHeight" [hidden]="hidePostToD365Section">
+    <nb-card-header>
+      <h2>{{dialogTitle}} <button nbButton class="buttonPrint" style="float: right;"  (click)="print()"><nb-icon icon="printer-outline"></nb-icon></button></h2>
+    </nb-card-header>
+    <nb-card-body>
+      <div class="row col-12">
+        <div class="col-7">
+          <table>
+            <thead></thead>
+            <tbody>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>Plant                </td><td width="5%">:</td><td width="55%">{{ reportHeader.plant }}</td></tr>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>Item No              </td><td width="5%">:</td><td width="55%">{{ reportHeader.cpdItemNo }}</td></tr>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>CPD Batch Order No   </td><td width="5%">:</td><td width="55%">{{ reportHeader.cpdBatchOrderNo }}</td></tr>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>Product Type         </td><td width="5%">:</td><td width="55%">{{ reportHeader.productType }}</td></tr>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>Target Weight (kg)    </td><td width="5%">:</td><td width="55%">{{ reportHeader.targetWeight }}</td></tr>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>Actual Weight (kg)   </td><td width="5%">:</td>
+                <td width="55%"><!--{{ reportHeader.actualWeight }}--><div *ngIf="hideBtnPostToD365">{{ reportHeader.actualWeight }}</div>
+                  <div class="row"  style="padding: 0 0 0 0; margin: 0 0 0 0 ;">
+                    <div class="col-8" style="padding: 0 0 0 0; margin: 0 0 0 0 ;">
+                        <input [disabled]="isEditDisabled" 
+                                            class="col-8"
+                                            fieldSize="tiny" 
+                                            nbInput id="input-actualweight" 
+                                            [(ngModel)]="actualWeight" 
+                                            type="number"
+                                            step="0.0001"
+                                            [hidden]="hideBtnPostToD365">
+                    </div>
+                    <div class="col-4" style="margin: 0 0 0 0 ; padding: 0 1px 0 0;">
+                      <button nbButton class="button-edit" *ngIf="isEditDisabled"  (click)="editActualWeight()" size="tiny" style="padding: 0.25em 0.25em 0.25em 0.25em;" nbTooltip="Edit Actual Weight" nbTooltipStatus="primary" [hidden]="hideBtnPostToD365">
+                        <nb-icon icon="edit" size="tiny" style="padding: 0 0 0 0;"></nb-icon>
+                      </button>
+                      <button nbButton *ngIf="!isEditDisabled" status="success" (click)="confirmEditActualWeight()" size="tiny" style="padding: 0.25em 0.25em 0.25em 0.25em;" nbTooltip="Confirm edit" nbTooltipStatus="success" [hidden]="hideBtnPostToD365">
+                        <nb-icon icon="checkmark-outline" size="tiny" style="padding: 0 0 0 0;"></nb-icon>
+                      </button>
+                      <button nbButton *ngIf="!isEditDisabled" status="danger" (click)="cancelEditActualWeight()" size="tiny" style="padding: 0.25em 0.25em 0.25em 0.25em;" nbTooltip="Cancel" nbTooltipStatus="danger" [hidden]="hideBtnPostToD365">
+                        <nb-icon icon="close-outline" size="tiny" style="padding: 0 0 0 0;"></nb-icon>
+                      </button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr style="font-weight: bold; font-size: smaller;" width="40%"><td>Status    </td><td width="5%">:</td><td width="55%">{{ reportHeader.cpdBatchStatus }}</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <div class="col-5">
+            <table>
+                <thead></thead>
+                <tbody>
+                    <tr style="font-weight: bold; font-size: smaller;" width="50%"><td>Compounding Date Time</td><td width="5%">:</td><td width="45%">{{ reportHeader.compoundingDate }}</td></tr>
+                    <tr style="font-weight: bold; font-size: smaller;" width="50%" *ngIf="hideBtnPostToD365"><td>Flow In Time         </td><td width="5%">:</td><td width="45%">{{ reportHeader.flowInTime }}</td></tr><tr style="font-weight: bold; font-size: smaller;" width="50%"><td>Mixing Tank          </td><td width="5%">:</td><td width="45%">{{ reportHeader.mixingTankNo }}</td></tr>
+                    <tr style="font-weight: bold; font-size: smaller;" width="50%"><td>Created By           </td><td width="5%">:</td><td width="45%">{{ reportHeader.createdBy }}</td></tr>
+                    <tr style="font-weight: bold; font-size: smaller;" width="50%"><td>Created On           </td><td width="5%">:</td><td width="45%">{{ reportHeader.createdDate }}</td></tr>
+                    <tr style="font-weight: bold; font-size: smaller;" width="50%"><td>Generated By         </td><td width="5%">:</td><td width="45%">{{ generatedBy }}</td></tr>
+                    <tr style="font-weight: bold; font-size: smaller;" width="50%"><td>Generated On         </td><td width="5%">:</td><td width="45%">{{ generatedOn }}</td></tr>
+                    </tbody>
+                <!--<tbody>
+                  <td width="40%">
+                    <tr style="font-weight: bold;">Mixing Tank</tr>
+                    <tr style="font-weight: bold;">Created By</tr>
+                    <tr style="font-weight: bold;">Created On</tr>
+                    <tr style="font-weight: bold;">Generated By</tr>
+                    <tr style="font-weight: bold;">Generated On</tr>
+                  </td>
+                  <td width="5%">
+                    <tr>:</tr>
+                    <tr>:</tr>
+                    <tr>:</tr>
+                    <tr>:</tr>
+                    <tr>:</tr>
+                  </td>
+                  <td width="55%">
+                    <tr>{{ reportHeader.mixingTank }}</tr>
+                    <tr>{{ reportHeader.createdBy }}</tr>
+                    <tr>{{ reportHeader.createdOn }}</tr>
+                    <tr>{{ generatedBy }}</tr>
+                    <tr>{{ generatedOn }}</tr>
+                  </td>
+                </tbody>-->
+              </table>
+        </div>
+      </div>
+      <br>
+
+      <!--Latex-->
+      <table mat-table [dataSource]="dataLatex" matSort class=" resultTable" > <!--mat-elevation-z8-->
+        <!-- Position Column -->
+        <ng-container matColumnDef="No">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index" style="text-align: right; width:5%; font-size: smaller;">{{ i + 1 }}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="ItemID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
+          <td mat-cell *matCellDef="let element" style=" width:20%; font-size: smaller;">{{ element.itemID }}</td>
+        </ng-container>
+  
+        <!-- Batch Number Column -->
+        <ng-container matColumnDef="BatchNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch Number</th>
+          <td mat-cell *matCellDef="let element" style="width:15%; font-size: smaller;">{{ element.batchNo }}</td>
+        </ng-container>
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ActualWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.actualWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="TargetWeight" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.targetWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VarianceWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.varianceWeight | number : '1.4-4' }}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VariancePct">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (%) &plusmn;2</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.variancePercentage }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">Latex</th>
+          </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-header-row *matHeaderRowDef="['header-row-second-group']"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <br>
+
+      <!--Stabilization-->
+      <table mat-table [dataSource]="dataStabilization" matSort class=" resultTable" > <!--mat-elevation-z8-->
+        <!-- Position Column -->
+        <ng-container matColumnDef="No">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index" style="text-align: right; width: 5%; font-size: smaller;">{{ i + 1 }}</td>
+        </ng-container>
+  
+        <!-- Name Column -->
+        <!--<ng-container matColumnDef="Stage">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Stage Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.stageName }}</td>
+        </ng-container>-->
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="ItemID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
+          <td mat-cell *matCellDef="let element" style="width:20%; font-size: smaller;">{{ element.itemID }}</td>
+        </ng-container>
+  
+        <!-- Batch Number Column -->
+        <ng-container matColumnDef="BatchNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch Number</th>
+          <td mat-cell *matCellDef="let element" style="width:15%; font-size: smaller;">{{ element.batchNo }}</td>
+        </ng-container>
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ActualWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;  width:15%; font-size: smaller;">{{ element.actualWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="TargetWeight" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.targetWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VarianceWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.varianceWeight | number : '1.4-4' }}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VariancePct">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (%) &plusmn;2</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right; width:15%; font-size: smaller;">{{ element.variancePercentage }}</td>
+        </ng-container>
+        
+
+        <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">Stabilization</th>
+          </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="['header-row-second-group']"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <br>
+
+
+      <!--Composite-->
+      <table mat-table [dataSource]="dataComposite" matSort class=" resultTable" > <!--mat-elevation-z8-->
+        <!-- Position Column -->
+        <ng-container matColumnDef="No">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index" style="text-align: right; width:5%; font-size: smaller;">{{ i + 1 }}</td>
+        </ng-container>
+   
+        <!-- Name Column -->
+        <ng-container matColumnDef="ItemID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
+          <td mat-cell *matCellDef="let element" style="width:20%; font-size: smaller;">{{ element.itemID }}</td>
+        </ng-container>
+  
+        <!-- Batch Number Column -->
+        <ng-container matColumnDef="BatchNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch Number</th>
+          <td mat-cell *matCellDef="let element" style="width:15%; font-size: smaller;">{{ element.batchNo }}</td>
+        </ng-container>;
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ActualWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.actualWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="TargetWeight" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.targetWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VarianceWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.varianceWeight | number : '1.4-4' }}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VariancePct">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (%) &plusmn;2</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.variancePercentage }}</td>
+        </ng-container>
+        
+
+        <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">Composite</th>
+          </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="['header-row-second-group']"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <br>
+
+      <!--ESD-->
+      <table mat-table [dataSource]="dataESD" matSort class=" resultTable" [hidden]="hideESD"> <!--mat-elevation-z8-->
+        <!-- Position Column -->
+        <ng-container matColumnDef="No">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index" style="text-align: right; width:5%; font-size: smaller;">{{ i + 1 }}</td>
+        </ng-container>
+    
+        <!-- Name Column -->
+        <!--<ng-container matColumnDef="Stage">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Stage Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.stageName }}</td>
+        </ng-container>-->
+    
+        <!-- Name Column -->
+        <ng-container matColumnDef="ItemID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
+          <td mat-cell *matCellDef="let element" style="width:20%; font-size: smaller;">{{ element.itemID }}</td>
+        </ng-container>
+    
+        <!-- Batch Number Column -->
+        <ng-container matColumnDef="BatchNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch Number</th>
+          <td mat-cell *matCellDef="let element" style="width:15%; font-size: smaller;">{{ element.batchNo }}</td>
+        </ng-container>;
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ActualWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.actualWeight | number : '1.4-4' }}</td>
+        </ng-container>
+    
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="TargetWeight" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.targetWeight | number : '1.4-4' }}</td>
+        </ng-container>
+    
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VarianceWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.varianceWeight | number : '1.4-4' }}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VariancePct">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (%) &plusmn;2</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.variancePercentage }}</td>
+        </ng-container>
+        
+
+        <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">ESD</th>
+          </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="['header-row-second-group']"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <br [hidden]='hideESD'>
+
+      <!--Wax-->
+      <table mat-table [dataSource]="dataWax" matSort class=" resultTable"> <!--mat-elevation-z8-->
+        <!-- Position Column -->
+        <ng-container matColumnDef="No">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index" style="text-align: right;width:5%; font-size: smaller;">{{ i + 1 }}</td>
+        </ng-container>
+  
+        <!-- Name Column -->
+        <!--<ng-container matColumnDef="Stage">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Stage Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.stageName }}</td>
+        </ng-container>-->
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="ItemID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
+          <td mat-cell *matCellDef="let element"style="width:20%; font-size: smaller;">{{ element.itemID }}</td>
+        </ng-container>
+  
+        <!-- Batch Number Column -->
+        <ng-container matColumnDef="BatchNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch Number</th>
+          <td mat-cell *matCellDef="let element"style="width:15%; font-size: smaller;">{{ element.batchNo }}</td>
+        </ng-container>
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ActualWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.actualWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="TargetWeight" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.targetWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VarianceWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.varianceWeight | number : '1.4-4' }}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VariancePct">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (%) &plusmn;2</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.variancePercentage }}</td>
+        </ng-container>
+        
+
+        <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">Wax</th>
+          </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="['header-row-second-group']"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+      <br>
+
+
+      <!--Pigment-->
+      <table mat-table [dataSource]="dataPigment" matSort class=" resultTable"> <!--mat-elevation-z8-->
+        <!-- Position Column -->
+        <ng-container matColumnDef="No">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+          <td mat-cell *matCellDef="let element; let i = index" style="text-align: right;width:5%; font-size: smaller;">{{ i + 1 }}</td>
+        </ng-container>
+  
+        <!-- Name Column -->
+        <!--<ng-container matColumnDef="Stage">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Stage Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.stageName }}</td>
+        </ng-container>-->
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="ItemID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Item ID</th>
+          <td mat-cell *matCellDef="let element"style="width:20%; font-size: smaller;">{{ element.itemID }}</td>
+        </ng-container>
+  
+        <!-- Batch Number Column -->
+        <ng-container matColumnDef="BatchNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Batch Number</th>
+          <td mat-cell *matCellDef="let element"style="width:15%; font-size: smaller;">{{ element.batchNo }}</td>
+        </ng-container>
+        <!-- Weight Column -->
+        <ng-container matColumnDef="ActualWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.actualWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="TargetWeight" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target Weight (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.targetWeight | number : '1.4-4' }}</td>
+        </ng-container>
+  
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VarianceWeight">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (kg)</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.varianceWeight | number : '1.4-4' }}</td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="VariancePct">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Variance (%) &plusmn;2</th>
+          <td mat-cell *matCellDef="let element" style="text-align: right;width:15%; font-size: smaller;">{{ element.variancePercentage }}</td>
+        </ng-container>
+        
+
+        <ng-container matColumnDef="header-row-second-group">
+            <th mat-header-cell *matHeaderCellDef [attr.colspan]="7">Pigment</th>
+          </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="['header-row-second-group']"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </nb-card-body>
+    <nb-card-footer>
+      <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Close</button>
+      <button class="cancel" nbButton status="success" (click)="postToD365()" size="small" [hidden]="hideBtnPostToD365" [disabled]="!isEditDisabled"><nb-icon icon="arrow-circle-up-outline"></nb-icon>Post to D365</button>
+    </nb-card-footer>
+</nb-card>

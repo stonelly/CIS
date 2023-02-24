@@ -1,0 +1,252 @@
+<nb-card [hidden] = "hideMajorDialog" class="setHeight">
+    <nb-card-header>
+        <h6>{{cpdBatchNo}}: Add Materials</h6>
+    </nb-card-header>
+    <nb-card-body>
+        <form novalidate id="mainform" [formGroup]="mainForm" autocomplete="off" (ngSubmit)="onSubmit()"> <!-- (ngSubmit)="onSubmit()"-->
+            <!--<table class="table table-hover" formGroupName="pigment"> 
+                <thead>
+                  <tr>
+                    <th>Chemical Item ID</th>
+                    <th>Batch Number</th>
+                    <th>Target Weight (kg)</th>
+                    <th>Actual Weight (kg)</th>
+                  </tr>
+                </thead>
+                <tbody formArrayName="items">
+                  <tr *ngFor="let item of getControls('pigment'); let i=index" [formGroupName]="i">
+                    <td style="display:none;"><input nbInput fullWidth fieldSize="small" formControlName="itemId" placeholder="Item" [attr.disabled]="true"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="Target Weight" type="number" [attr.disabled]="true"></td>
+                    <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="Actual Weight" type="number"></td>
+                  </tr>
+                </tbody>
+            </table>-->
+            <nb-card>
+              <nb-card-header>
+                <b>Latex</b>
+                <button class="addButton" nbButton (click)="addLatex(); $event.preventDefault()" size="small"><nb-icon icon="plus"></nb-icon>Add</button>
+              </nb-card-header>
+                <nb-card-body>
+                  <table class="table table-hover" formGroupName="latex">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Chemical Item ID</th>
+                        <th>Batch Number</th>
+                        <th>Target Weight (kg)</th>
+                        <th>Current Weight (Kg)</th>
+                        <th>Add-On Weight (kg)</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="items">
+                      <tr *ngFor="let item of getControls('latex'); let i=index" [formGroupName]="i">
+                        <td><button *ngIf="mainForm.getRawValue()['latex']['items'][i]['disableDelete'] == false" size="small" nbButton (click)="removeLatexItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td> <!--[attr.disabled]="true"-->
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="addonWeight" placeholder="0.0000" step="0.0001" type="number"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card>
+              <nb-card-header>
+                <b>Stabilization</b>
+                <button class="addButton" nbButton (click)="addStabilization(); $event.preventDefault()" size="small"><nb-icon icon="plus"></nb-icon>Add</button>
+              </nb-card-header>
+                <nb-card-body>
+                  <table class="table table-hover" formGroupName="stabilization">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Chemical Item ID</th>
+                        <th>Batch Number</th>
+                        <th>Target Weight (kg)</th>
+                        <th>Current Weight (Kg)</th>
+                        <th>Add-On Weight (kg)</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="items">
+                      <tr *ngFor="let item of getControls('stabilization'); let i=index" [formGroupName]="i">
+                        <!--<td><button size="small" nbButton (click)="removeStabilizationItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" value="item" [attr.disabled]="true"></td>
+                        <td style="display:none;"><input nbInput fullWidth fieldSize="small" formControlName="StageName" value="item" [attr.disabled]="true"></td>
+                        <td style="display:none;"><input nbInput fullWidth fieldSize="small" formControlName="itemid" value="item" [attr.disabled]="true"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="bomunit" value="Unit" [attr.disabled]="true"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="quantity" placeholder="Target Weight" type="number" (ngModelChange)="valueChanged()"></td>
+                        <td style="display:none;"><input nbInput fullWidth fieldSize="small" formControlName="itemId" placeholder="Item" [attr.disabled]="true"></td>
+                      *ngIf="mainForm.controls['stabilization']['items'][i].length > 1" -->
+                        <td><button *ngIf="mainForm.getRawValue()['stabilization']['items'][i]['disableDelete'] == false" size="small" nbButton (click)="removeStabilizationItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td> <!--[attr.disabled]="true"-->
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="addonWeight" placeholder="0.0000" step="0.0001" type="number"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card>
+              <nb-card-header>
+                <b>Composite</b>
+                <button class="addButton" nbButton (click)="addComposite(); $event.preventDefault()" size="small"><nb-icon icon="plus"></nb-icon>Add</button>
+              </nb-card-header>
+                <nb-card-body>
+                  <table class="table table-hover" formGroupName="composite">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Chemical Item ID</th>
+                        <th>Batch Number</th>
+                        <th>Target Weight (kg)</th>
+                        <th>Current Weight (Kg)</th>
+                        <th>Add-On Weight (kg)</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="items">
+                      <tr *ngFor="let item of getControls('composite'); let i=index" [formGroupName]="i">
+                      <td><button *ngIf="mainForm.getRawValue()['composite']['items'][i]['disableDelete'] == false" size="small" nbButton (click)="removeCompositeItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td> <!-- [attr.disabled]="true"-->
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="addonWeight" placeholder="0.0000" step="0.0001" type="number"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card>
+              <nb-card-header>
+                <b>ESD</b>
+                <button class="addButton" nbButton (click)="addESD(); $event.preventDefault()" size="small"><nb-icon icon="plus"></nb-icon>Add</button>
+              </nb-card-header>
+                <nb-card-body>
+                  <table class="table table-hover" formGroupName="esd">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Chemical Item ID</th>
+                        <th>Batch Number</th>
+                        <th>Target Weight (kg)</th>
+                        <th>Current Weight (Kg)</th>
+                        <th>Add-On Weight (kg)</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="items">
+                      <tr *ngFor="let item of getControls('esd'); let i=index" [formGroupName]="i">
+                      <td><button *ngIf="mainForm.getRawValue()['esd']['items'][i]['disableDelete'] == false" size="small" nbButton (click)="removeESDItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td><!--[attr.disabled]="true"-->
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td>
+                      <td><input nbInput fullWidth fieldSize="small" formControlName="addonWeight" placeholder="0.0000" step="0.0001" type="number"></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card>
+              <nb-card-header>
+                <b>Wax</b>
+                <button class="addButton" nbButton (click)="addWax(); $event.preventDefault()" size="small"><nb-icon icon="plus"></nb-icon>Add</button>
+              </nb-card-header>
+                <nb-card-body>
+                  <table class="table table-hover" formGroupName="wax">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Chemical Item ID</th>
+                        <th>Batch Number</th>
+                        <th>Target Weight (kg)</th>
+                        <th>Current Weight (Kg)</th>
+                        <th>Add-On Weight (kg)</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="items">
+                      <tr *ngFor="let item of getControls('wax'); let i=index" [formGroupName]="i">
+                        <td><button *ngIf="mainForm.getRawValue()['wax']['items'][i]['disableDelete'] == false" size="small" nbButton (click)="removeWaxItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td><!--[attr.disabled]="true"-->
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="addonWeight" placeholder="0.0000" step="0.0001" type="number"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+            </nb-card>
+
+            <nb-card>
+              <nb-card-header>
+                <b>Pigment</b>
+                <button class="addButton" nbButton (click)="addPigment(); $event.preventDefault()" size="small"><nb-icon icon="plus"></nb-icon>Add</button>
+              </nb-card-header>
+                <nb-card-body>
+                  <table class="table table-hover" formGroupName="pigment">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Chemical Item ID</th>
+                        <th>Batch Number</th>
+                        <th>Target Weight (kg)</th>
+                        <th>Current Weight (Kg)</th>
+                        <th>Add-On Weight (kg)</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="items">
+                      <tr *ngFor="let item of getControls('pigment'); let i=index" [formGroupName]="i">
+                        <td><button *ngIf="mainForm.getRawValue()['pigment']['items'][i]['disableDelete'] == false" size="small" nbButton (click)="removePigmentItem(i); $event.preventDefault()"><nb-icon icon="close"></nb-icon></button></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="displayItemId" placeholder="Item" [attr.disabled]="true"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="itemBatchNo" placeholder="Batch Number"></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="targetWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td><!--[attr.disabled]="true"-->
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="actualWeight" placeholder="0.0000" step="0.0001" type="number" readonly></td>
+                        <td><input nbInput fullWidth fieldSize="small" formControlName="addonWeight" placeholder="0.0000" step="0.0001" type="number"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+            </nb-card>
+        </form>
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+
+        <button class="submit" form="mainform" type="submit" nbButton status="success"
+                size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+    </nb-card-footer>
+</nb-card>
+<nb-card [hidden]="hideStageItemDialog" class="dropDownListSetWidth">
+  <nb-card-header>
+      Select {{currentStage}} Item
+  </nb-card-header>
+  <nb-card-body>
+    <form novalidate id="dialogform" (ngSubmit)="onSubmit()" [formGroup]="dialogForm">
+      <div class="form-row">
+        <nb-select status="primary" formControlName="StageItemId" fullWidth (selected)="selectedOption">
+            <nb-option *ngFor="let mappedItem of mappedBOMItemsForDialog" [value]="mappedItem" class="col-sm-12" fullWidth> {{mappedItem.itemId}} &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;{{ mappedItem.itemName }}</nb-option>
+        </nb-select>
+      </div>
+      <!--<nb-select status="primary" class="col-sm-12" (selected)="selectedOption">
+        <nb-option *ngFor="let mappedItem of mappedBOMItemsForDialog" [value]="mappedItem" > {{mappedItem.itemId}} | {{ mappedItem.itemName }}</nb-option>
+      </nb-select>-->
+    </form>
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="cancel" nbButton status="danger" (click)="cancelStageItem()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    <button class="addButton" nbButton status="success" (click)="addStageItem()"
+             size="small"><nb-icon icon="checkmark" ></nb-icon>Add</button>
+    
+  </nb-card-footer>
+</nb-card>
+
+    

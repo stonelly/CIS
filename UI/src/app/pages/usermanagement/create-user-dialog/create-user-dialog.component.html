@@ -1,0 +1,140 @@
+<nb-card status="primary">
+  <nb-card-header >{{ title }}</nb-card-header>
+  <nb-card-body>
+    <!--<ng2-smart-table [settings]="settings" [source]="source">
+    </ng2-smart-table>-->
+      <div class="col-md-12">
+                   
+                      <!--<nb-step [stepControl]="mainform" label="Create User">-->
+                          <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainform" autocomplete="off">
+                      <!--<form [formGroup]="mainform" (ngSubmit)="onSubmit()" >-->
+                  
+                          <div class="form-group row">
+                              <label class="label col-sm-4 col-form-label">Authentication Type</label>
+
+                              <nb-select class="label col-sm-8" placeholder="Select Authentication Type"  (selectedChange)="authTypeClick($event)" status="primary" 
+                                          formControlName="formAuthType">
+                                <nb-option *ngFor="let types of authenticationType" [value]="types.value"> {{ types.name }}</nb-option>
+                              </nb-select>
+                          </div>
+                          
+                          <!--AD Registration Section-->
+                          <div class="form-group row"  class="col-sm-12" [hidden]="showAD" >
+                            <!--<div class="form-group row">
+                              <label for="inputFirstName" class="label col-sm-4 col-form-label">AD Username</label>
+                              <div class="col-sm-8">
+                                  <input type="text" nbInput fullWidth id="inputADName" placeholder="AD Account"class="col-sm-8">
+                                  <button nbButton [(status)]="buttonVerified" (click)="searchAD()" class="col-sm-3">Search</button>
+                              </div>
+                            </div>-->
+                            
+                            <div class="form-group row">
+                              <label for="inputSearchName" class="label col-sm-4 col-form-label">AD Name</label>
+                              <div class="col-sm-8">
+                                <input type="text" name="ADAccount" list="ADAccount" nbInput fullWidth id="inputSearchName" placeholder="Search Name" formControlName="formADUserName" (keyup)="keyUp($event)" (input)="setFullName($event.target.value)"> <!---->
+                                <datalist id="ADAccount">
+                                  <option *ngFor="let user of ADUsernameList" [value]="user.userId">{{user.name}}</option>
+                                </datalist>
+                              </div>
+                            </div>
+
+                            
+                            <div class="form-group row">
+                              <label for="inputADFullName" class="label col-sm-4 col-form-label">Full Name</label>
+                              <div class="col-sm-8">
+                                <input type="text" nbInput fullWidth id="inputADFullName" placeholder="Full Name" formControlName="formADFullName" required> 
+                              </div>
+                            </div>
+
+                            <!--<div class="form-group row">
+                              <label for="inputUserrole" class="label col-sm-4 col-form-label">User Role</label>
+                              <div class="col-sm-8">
+                                <input type="text" nbInput fullWidth id="inputUserrole" placeholder="Full Name" required> 
+                              </div>
+                            </div>-->
+                            
+                          </div>
+                          <!--<div class="form-group row">
+                                <label for="inputUserName" class="label col-sm-4 col-form-label">Username</label>
+                                <div class="col-sm-8">
+                                    <input type="text" nbInput fullWidth id="inputUserName" placeholder="Username" > 
+                                </div>
+                            </div>-->
+                          <!--<div class="form-group row" [hidden]="hideADTable" class="col-sm-12">
+                              <ng2-smart-table [settings]="settings" [source]="ADTableSource"  [hidden]="hideADTable" >
+                              </ng2-smart-table>
+                          </div>-->
+                          <!--End of AD Registration Section-->
+                          
+                          <!--<div class="form-group row" [hidden]="hideADDetails" >
+                              <div class="form-group row">
+                                <label for="inputUserName" class="label col-sm-4 col-form-label">Username</label>
+                                <div class="col-sm-8">
+                                    <input type="text" nbInput fullWidth id="inputUserName" placeholder="Username" formControlName="formADUserName"> 
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="inputADFullName" class="label col-sm-4 col-form-label">Full Name</label>
+                                <div class="col-sm-8">
+                                  <input type="text" nbInput fullWidth id="inputADFullName" placeholder="Full Name" formControlName="formADFullName"> 
+                                </div>
+                              </div>
+                          </div>-->
+
+                          <!--System Registration Section-->
+                          <div class="form-group row" class="col-sm-12" [hidden]="showSystem">
+                            <div class="form-group row">
+                                <label for="inputUserName" class="label col-sm-4 col-form-label">Username</label>
+                                <div class="col-sm-8">
+                                    <input type="text" nbInput fullWidth id="inputUserName" placeholder="Username" formControlName="formSysUserName">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputSysFullName" class="label col-sm-4 col-form-label">Full Name</label>
+                              <div class="col-sm-8">
+                                <input type="text" nbInput fullWidth id="inputSysFullName" placeholder="Full Name" formControlName="formSysFullName"> 
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputPassword" class="label col-sm-4 col-form-label">Password</label>
+                              <div class="col-sm-8">
+                                  <input type="text" nbInput fullWidth id="inputPassword" placeholder="Password" formControlName="formSysPassword" required>
+                              </div>
+                            </div>
+                            <!--<div class="form-group row">
+                              <label for="inputSysUserrole" class="label col-sm-4 col-form-label">User Role</label>
+                              <div class="col-sm-8">
+                                <input type="text" nbInput fullWidth id="inputSysUserrole" placeholder="Full Name" required>
+                              </div>
+                            </div>-->
+                          </div>
+                          
+                         
+                          <!--<div class="form-group row">
+                              <label for="inputRole" class="label col-sm-4 col-form-label">Role</label>
+                              <nb-select class="label col-sm-8" placeholder="Select Role" formControlName="formRole">
+                                  <nb-option value="1">CPD Manager</nb-option>
+                                  <nb-option value="2">CPD Staff</nb-option>
+                                  <nb-option value="3">CPD Supervisor</nb-option>
+                                  <nb-option value="4">System Admin</nb-option>
+                                </nb-select>
+                          </div>-->
+                          
+                          <!--End of System Registration Section-->
+                      </form>
+                <!--<div>
+                    <nb-radio-group [(value)]="radioGroupValue">
+                      <nb-radio
+                        [value]="'This is value 1'">
+                        Radio 1
+                      </nb-radio>
+                    </nb-radio-group>
+                  </!--<div>-->
+              
+      </div> <!--End Employee Info-->
+    <!--<button nbButton (status)="'primary'" (click)="dismiss()">Save</button>-->
+    <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+    <button class="addButton" form="mainform" type="submit" nbButton status="success"
+             size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>   <!---[disabled]="mainForm.invalid"-->
+  </nb-card-body>
+</nb-card>

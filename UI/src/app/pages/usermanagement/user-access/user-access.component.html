@@ -1,0 +1,149 @@
+  
+  <div class="row">
+
+    <!--Login Info-->
+    <div class="col-md-12 col-sm-12">
+        <button nbButton status="primary" hero ng-click="button=true"><nb-icon icon="edit-2-outline"></nb-icon>Edit</button>
+        <button nbButton status="danger" hero><nb-icon icon="trash-2-outline" ng-disabled = "all"></nb-icon>Delete</button>
+        <button nbButton status="primary" outline (click)="backUserPage($event)"><nb-icon icon="arrow-back-outline"></nb-icon>Back</button>
+    </div>
+    <div class="col-md-3 col-sm-3">
+        <nb-card size="small">
+            <nb-card-header></nb-card-header>
+            <img src="/assets/images/CPD-Placeholder-1-1.jpg" class="pictWidth"/>
+            <!--<button nbButton (click)="open()">Edit</button>-->
+        </nb-card>
+      </div>
+    
+    <div class="col-md-9 col-sm-9">
+      <nb-card size="small">
+        <nb-card-header>Login Info</nb-card-header>
+        <nb-card-body>
+          <form>
+            <div class="form-group row">
+                <label for="inputAuthType" class="label col-sm-2 col-form-label">Authentication Type</label>
+                <div class="col-sm-4">
+                    <input type="text" nbInput fullWidth id="inputAuthType" placeholder="Application" disabled>
+                </div>
+                <label for="inputStatus" class="label col-sm-2 col-form-label">Status</label>
+                  <div class="col-sm-4">
+                    <input type="text" nbInput fullWidth id="inputStatus" value="Inactive" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputUserName" class="label col-sm-2 col-form-label">User Name</label>
+                <div class="col-sm-4">
+                  <input type="text" nbInput fullWidth id="inputUserName" placeholder="cpd.supervisor" disabled>
+                </div>
+                <label for="inputUserRole" class="label col-sm-2 col-form-label">User Role</label>
+                <div class="col-sm-4">
+                    <input type="text" nbInput fullWidth id="inputUserRole" placeholder="System Admin" disabled>
+                </div>
+            </div>            
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div> <!--End Login Info-->
+
+    <!--Employee Info-->
+    <div class="col-md-12">
+        <nb-card>
+          <nb-card-header>Employee Info</nb-card-header>
+          <nb-card-body>
+            <form>
+                <div class="form-group row">
+                    <label for="inputFirstName" class="label col-sm-3 col-form-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" nbInput fullWidth id="inputFirstName" placeholder="CPD" disabled>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputLastName" class="label col-sm-3 col-form-label">Last Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" nbInput fullWidth id="inputLastName" placeholder="Supervisor" disabled>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmployeeNo" class="label col-sm-3 col-form-label">Employee No</label>
+                    <div class="col-sm-9">
+                      <input type="text" nbInput fullWidth id="inputEmployeeNo" placeholder="--" disabled> 
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputJoinDate" class="label col-sm-3 col-form-label">Joined Date</label>
+                    <div class="col-sm-9">
+                      <input type="text" nbInput fullWidth id="inputJoinDate" placeholder="27/08/2014" disabled>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputResignDate" class="label col-sm-3 col-form-label">Resignation Date</label>
+                    <div class="col-sm-9">
+                      <input type="text" nbInput fullWidth id="inputResignDate" placeholder="NA" disabled>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail" class="label col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                      <input type="email" nbInput fullWidth id="inputEmail" placeholder="CDP.supervisor@hartalega.com.my" disabled>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputMobilePhone" class="label col-sm-3 col-form-label">Employee No</label>
+                    <div class="col-sm-9">
+                      <!--<input type="text" nbInput fullWidth id="inputMobilePhone" placeholder="" disabled>-->
+                      <input type="text" nbInput fullWidth id="inputMobilePhone" placeholder="" ng-disabled = "all">
+                    </div>
+                </div>
+            </form>
+          </nb-card-body>
+        </nb-card>
+    </div> <!--End Employee Info-->
+
+    <!--Employment Info-->
+    <div class="col-md-12">
+        <nb-card>
+          <nb-card-header>Employment Info</nb-card-header>
+          <nb-card-body>
+            <ng2-smart-table [settings]="settings" [source]="source">
+            </ng2-smart-table>
+          </nb-card-body>
+        </nb-card>
+    </div> <!--End Employment Info-->
+
+    <!--Data Access Right-->
+    <div class="col-md-12">
+        <nb-card>
+          <nb-card-header>Data Access Right</nb-card-header>
+          <nb-card-body>
+            <form>
+              <div class="form-group row">
+                <label for="inputEmail1" class="label col-sm-12 col-form-label">In Development</label>
+              </div>
+            </form>
+          </nb-card-body>
+        </nb-card>
+    </div> <!--End Data Access Right-->
+
+    <!--Data Information-->
+    <div class="col-md-12">
+        <nb-card>
+          <nb-card-header>Data Information</nb-card-header>
+          <nb-card-body>
+            <form>
+              <div class="form-group row">
+                <label for="inputCreatedBy" class="label col-sm-2 col-form-label" >Created By</label>
+                <div class="col-sm-4">
+                  <input type="text" nbInput fullWidth id="inputCreatedBy" placeholder="System Administrator 11/08/2014 18:02" disabled>
+                </div>
+                <label for="inputModifiedBy" class="label col-sm-2 col-form-label">Modified By</label>
+                <div class="col-sm-4">
+                  <input type="password" nbInput fullWidth id="inputModifiedBy" placeholder="System Administrator 03/12/2018 16:17" disabled>
+                </div>
+              </div>
+            </form>
+          </nb-card-body>
+        </nb-card>
+    </div> <!--End Data Information-->
+  
+  </div>
+  

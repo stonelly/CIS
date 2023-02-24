@@ -1,0 +1,123 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  button[nbTreeGridRowToggle] {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .card.custom-card {
+    overflow-x: scroll;
+  }
+  
+  .search-label {
+    display: block;
+  }
+  .search-input {
+    margin-bottom: 1rem;
+  }
+
+  .nb-column-name {
+    width: 100%;
+  }
+
+  ::ng-deep .row-toggle-button {
+    color: nb-theme(text-basic-color);
+  }
+
+  .nb-tree-grid-header-cell,
+  .nb-tree-grid-header-cell button {
+    text-transform: capitalize;
+  }
+
+  /*@media screen and (min-width: 400px) {
+    .nb-column-name,
+    .nb-column-size {
+      width: 50%;
+    }
+  }*/
+  
+  .buttonRight{
+    float: right,
+  }
+
+  .titleLeft{
+    float: left;
+    //vertical-align: middle;
+  }
+  
+  /*@media screen and (min-width: 500px) {
+    .nb-column-name,
+    .nb-column-size,
+    .nb-column-kind {
+      width: 33.333%;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .nb-column-name {
+      width: 31%;
+    }
+    .nb-column-size,
+    .nb-column-kind,
+    .nb-column-items {
+      width: 23%;
+    }
+  }*/
+
+  /*:host /deep/ ng2-smart-table tbody > tr > td {
+    font-size: .8rem;
+    padding: .5em .5em .5em .5em;
+    vertical-align: top;
+    text-align: left;
+  }
+  
+  :host /deep/ ng2-smart-table table tr th {
+    padding: .1em .1em .1em .1em;
+    vertical-align: top;
+    text-align: left; 
+  }
+  
+  :host /deep/ ng2-smart-table table tr.ng2-smart-titles{
+    th{
+      padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+  }
+  
+  :host /deep/ ng2-smart-table table tr.ng2-smart-titles th {
+      padding-right: 0.5rem !important; }
+    
+  
+  :host /deep/ ng-star-inserted {
+    padding: .1em .1em .1em .1em;
+  }
+  
+  
+  :host /deep/ ng2-smart-table table tr th a {
+    font-size: .8rem !important;
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left; 
+  }*/
+  
+}
+
+:host /deep/ .cell_middle {
+  text-align: center;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  font-size: .8rem;
+  padding: .5em 1em;
+}
+
+:host /deep/ ng2-smart-table table tr th {
+  font-size: .8rem !important;
+}
+
+:host /deep/ ng2-smart-table table tr th a {
+  font-size: .8rem !important;
+  font-weight: bold;
+}
+

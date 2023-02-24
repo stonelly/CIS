@@ -1,0 +1,25 @@
+<nb-card>
+    <nb-card-header>
+      <h6>{{userName}}</h6>
+    </nb-card-header>
+    <nb-card-body>
+        <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm" autocomplete="off">
+            <div class="form-row">
+                <div class="form-control-group col-md-12">
+                    <label class="col-md-12" for="input-flowintime">Select User Role:</label>
+                    <div class="form-row col-md-12">
+                        <nb-select fullWidth status="primary" formControlName="userRole" placeholder="User Role">
+                          <nb-option *ngFor="let roles of userRoleList" [value]="roles.roleId" > {{ roles.roleName }}</nb-option>
+                        </nb-select>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </nb-card-body>
+    <nb-card-footer>
+        <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Cancel</button>
+        <button class="submit" form="mainform" type="submit" nbButton status="success" (click)="onSubmit()"
+                 size="small"><nb-icon icon="checkmark"></nb-icon>Submit</button>
+    </nb-card-footer>
+</nb-card>

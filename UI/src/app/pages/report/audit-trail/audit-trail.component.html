@@ -1,0 +1,41 @@
+<nb-card class="custom-card">
+    <nb-card-header>
+      <span class="layouttitle">Audit Log</span>
+      <button class="addButton" nbButton (click)="toggle($event)">{{toggleText}}</button>
+      <!--<button class="addButton" nbButton  size="small"><nb-icon icon="plus"></nb-icon>Add New CPD Batch</button>-->
+      <!--<button class="addButton" nbButton  size="small"><nb-icon icon="repeat"></nb-icon>Sync To CPD HMI</button>-->
+    </nb-card-header>
+  
+    <nb-card-body>
+        <!--<nb-checkbox (checkedChange)="toggle($event)">{{toggleText}}</nb-checkbox>-->
+        <div class= "form-row" >
+            <div class="col-md-12" [hidden]="hideDateRange">
+                <form novalidate id="dateRangeForm" (ngSubmit)="searchByDate()" [formGroup]="dateRangeForm" autocomplete="off">
+                <table>
+                    <tr>
+                        <td width="45%"><label>From:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input nbInput type="date" formControlName="fromDate">
+                        </td>
+                        <td width="40%"><label>To:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input nbInput type="date"  formControlName="toDate">
+                        </td>
+                        <td width="15%">&nbsp;&nbsp;&nbsp;&nbsp;<button nbButton size="small" form="dateRangeForm" type="submit" [nbSpinner]="loadingSpinner"><nb-icon icon="search"></nb-icon></button><!-- [nbSpinner]="loadingSpinner"-->
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+            <div class="col-md-12" [hidden]="hideMostRecent">
+                <form novalidate id="numberForm" (ngSubmit)="searchByCount()" [formGroup]="numberForm" autocomplete="off">
+                <label>Top&nbsp;&nbsp;&nbsp;&nbsp;</label><input class="col-md-2" nbInput type="number" formControlName="numberInput" placeholder="100" max="100" min="1"><label>&nbsp;&nbsp;&nbsp;&nbsp;Records</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;<button nbButton size="small" form="numberForm" type="submit" [nbSpinner]="loadingSpinner"><nb-icon icon="search"></nb-icon></button>
+                </form>
+            </div>
+        </div>
+    <br><br>
+      <ng2-smart-table [settings]="settings" [source]="source"> 
+      </ng2-smart-table>
+    </nb-card-body>
+
+    <!--<pre>{{data | json}}</pre>-->
+</nb-card>

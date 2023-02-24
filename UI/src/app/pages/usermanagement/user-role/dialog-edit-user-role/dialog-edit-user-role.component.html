@@ -1,0 +1,202 @@
+<nb-card class="setHeight">
+  <nb-card-header>
+    <h6>{{roleName}}</h6>
+  </nb-card-header>
+  <nb-card-body>
+  <form novalidate id="mainform" (ngSubmit)="onSubmit()" [formGroup]="mainForm" autocomplete="off">
+<!--delete this-->
+    <!--<nb-card *ngFor="let item of ScreenObj; let i=index;">
+      <nb-card-header class="nbCardHeaderStyle">
+        <b>{{item.screenName}} in loop</b>
+      </nb-card-header>
+      <nb-card-body>
+        <table class="table table-hover" formGroupName="{{item.screenName}}">
+          <thead>
+          </thead>
+          <tbody formArrayName="items">
+            
+            <tr *ngFor="let item of getControls(item.screenName); let i=index;" [formGroupName]="i">
+              <nb-accordion>
+                <nb-accordion-item>
+                 <nb-accordion-item-header class="nbAccordionItemHeaderStyle">
+                        <nb-checkbox status="basic" formControlName="isChecked" (change)="changeTick($event, item)"></nb-checkbox>
+                        {{item.get('name').value}}
+                 </nb-accordion-item-header>
+                 <nb-accordion-item-body>
+                   <nb-list>
+                    <nb-list-item *ngFor="let item of getAPIControls('Home', i); let j=index"  class="listStyle">
+                      <nb-checkbox status="basic" [checked]='getIsChecked(item)' (change)="changeChildTick($event, item, i, j, 'Home')" [disabled]="isDisabled(i, j, 'Home')"></nb-checkbox> 
+                      {{ item.apiName }}
+                    </nb-list-item>
+                  </nb-list>
+                 </nb-accordion-item-body>
+                </nb-accordion-item>
+               </nb-accordion>
+          </tr>
+          </tbody>
+        </table>
+      </nb-card-body>
+    </nb-card>-->
+<!--delete-->
+
+
+
+      <div class="accordion-container">
+        <!--<nb-card>
+          <nb-card-header class="nbCardHeaderStyle">
+            <label for="inputSysFullName" class="col-sm-3"><b>New Role Name</b></label>
+            <input required class="col-sm-4" type="text" name="inputRoleName" nbInput fullWidth id="inputRoleName" placeholder="New Role Name" formControlName="RoleName">
+          </nb-card-header>
+        </nb-card>-->
+        <nb-card>
+          <nb-card-header class="nbCardHeaderStyle">
+            <nb-checkbox status="basic" (change)="changeModuleTick('Home')" [checked]="disableHomeScreen"></nb-checkbox>
+            <b>Home</b>
+          </nb-card-header>
+          <nb-card-body>
+            
+            <table class="table table-hover" formGroupName="Home">
+              <thead>
+              </thead>
+              <tbody formArrayName="items">
+                
+                <tr *ngFor="let item of getControls('Home'); let i=index" [formGroupName]="i">
+                  <nb-accordion>
+                    <nb-accordion-item [disabled]="!disableHomeScreen">
+                     <nb-accordion-item-header class="nbAccordionItemHeaderStyle">
+                            <nb-checkbox status="basic" formControlName="isChecked" (change)="changeTick($event, item)" [disabled]="!disableHomeScreen"></nb-checkbox> <!-- formControlName="isChecked" [checked]="item.get('isChecked').value" [disabled]="!item.get('isChecked').disabled"-->
+                            {{item.get('name').value}}
+                     </nb-accordion-item-header>
+                     <nb-accordion-item-body>
+                       <nb-list>
+                        <nb-list-item *ngFor="let item of getAPIControls('Home', i); let j=index"  class="listStyle">
+                          <nb-checkbox status="basic" [checked]='getIsChecked(item)' (change)="changeChildTick($event, item, i, j, 'Home')" [disabled]="isDisabled(i, j, 'Home')"></nb-checkbox> <!--formControlName="isChildChecked"-->
+                          {{ item.apiName }}
+                        </nb-list-item>
+                      </nb-list>
+                     </nb-accordion-item-body>
+                    </nb-accordion-item>
+                   </nb-accordion>
+              </tr>
+              </tbody>
+            </table>
+          </nb-card-body>
+        </nb-card>
+
+        <nb-card> <!--class="col-md-6"-->
+          <nb-card-header class="nbCardHeaderStyle">
+            <nb-checkbox status="basic" (change)="changeModuleTick('Inquiry')" [checked]="disableInquiryScreen"></nb-checkbox>
+            <b>Inquiry</b>
+          </nb-card-header>
+          <nb-card-body>
+            <table class="table table-hover" formGroupName="Inquiry">
+              <thead>
+                <tr>
+                </tr>
+              </thead>
+              <tbody formArrayName="items">
+                <tr *ngFor="let item of getControls('Inquiry'); let i=index" [formGroupName]="i">
+                  <nb-accordion>
+                    <nb-accordion-item [disabled]="!disableInquiryScreen">
+                     <nb-accordion-item-header class="nbAccordionItemHeaderStyle">
+                            <nb-checkbox status="basic" formControlName="isChecked" (change)="changeTick($event, item)" [disabled]="!disableInquiryScreen"></nb-checkbox>
+                            {{item.get('name').value}}
+                     </nb-accordion-item-header>
+                    </nb-accordion-item>
+                   </nb-accordion>
+              </tr>
+              </tbody>
+            </table>
+          </nb-card-body>
+        </nb-card>
+
+        <nb-card> <!--class="col-md-6"-->
+          <nb-card-header class="nbCardHeaderStyle">
+            <nb-checkbox status="basic" (change)="changeModuleTick('Report')" [checked]="disableReportScreen"></nb-checkbox>
+            <b>Report</b>
+          </nb-card-header>
+          <nb-card-body>
+            <table class="table table-hover" formGroupName="Report">
+              <thead>
+                <tr>
+                </tr>
+              </thead>
+              <tbody formArrayName="items">
+                <tr *ngFor="let item of getControls('Report'); let i=index" [formGroupName]="i">
+                  <nb-accordion>
+                    <nb-accordion-item [disabled]="!disableReportScreen">
+                     <nb-accordion-item-header class="nbAccordionItemHeaderStyle">
+                            <nb-checkbox status="basic" formControlName="isChecked" (change)="changeTick($event, item)" [disabled]="!disableReportScreen"></nb-checkbox>
+                            {{item.get('name').value}}
+                     </nb-accordion-item-header>
+                    </nb-accordion-item>
+                  </nb-accordion>
+              </tr>
+              </tbody>
+            </table>
+          </nb-card-body>
+        </nb-card>
+
+        <nb-card> <!--class="col-md-6"-->
+          <nb-card-header class="nbCardHeaderStyle">
+            <nb-checkbox status="basic" (change)="changeModuleTick('MasterSettings')" [checked]="disableMasterSettingScreen"></nb-checkbox>
+            <b>Master Settings</b>
+          </nb-card-header>
+          <nb-card-body>
+            <table class="table table-hover" formGroupName="MasterSettings">
+              <thead>
+                <tr>
+                </tr>
+              </thead>
+              <tbody formArrayName="items">
+                <tr *ngFor="let item of getControls('MasterSettings'); let i=index" [formGroupName]="i">
+                  <nb-accordion>
+                    <nb-accordion-item [disabled]="!disableMasterSettingScreen">
+                     <nb-accordion-item-header class="nbAccordionItemHeaderStyle">
+                            <nb-checkbox status="basic" formControlName="isChecked" (change)="changeTick($event, item)" [disabled]="!disableMasterSettingScreen"></nb-checkbox>
+                            {{item.get('name').value}}
+                     </nb-accordion-item-header>
+                    </nb-accordion-item>
+                   </nb-accordion>
+              </tr>
+              </tbody>
+            </table>
+          </nb-card-body>
+        </nb-card>
+
+        <nb-card> <!--class="col-md-6"-->
+          <nb-card-header class="nbCardHeaderStyle">
+            <nb-checkbox status="basic" (change)="changeModuleTick('UserManagement')" [checked]="disableUserManagementScreen"></nb-checkbox>
+            <b>User Management</b>
+          </nb-card-header>
+          <nb-card-body>
+            <table class="table table-hover" formGroupName="UserManagement">
+              <thead>
+                <tr>
+                </tr>
+              </thead>
+              <tbody formArrayName="items">
+                <tr *ngFor="let item of getControls('UserManagement'); let i=index" [formGroupName]="i">
+                  <nb-accordion>
+                    <nb-accordion-item [disabled]="!disableUserManagementScreen">
+                     <nb-accordion-item-header class="nbAccordionItemHeaderStyle">
+                            <nb-checkbox status="basic" formControlName="isChecked" (change)="changeTick($event, item)" [disabled]="!disableUserManagementScreen"></nb-checkbox>
+                            {{item.get('name').value}}
+                     </nb-accordion-item-header>
+                    </nb-accordion-item>
+                   </nb-accordion>
+              </tr>
+              </tbody>
+            </table>
+          </nb-card-body>
+        </nb-card>
+      </div>    
+  </form>
+  </nb-card-body>
+  <nb-card-footer>
+      <button class="cancel" nbButton status="danger" (click)="cancel()" size="small"><nb-icon icon="close"></nb-icon>Close</button>
+      <!--<button class="submit"  nbButton status="success" (click)="onSubmit()"
+              size="small"><nb-icon icon="checkmark"></nb-icon>Confirm</button>-->
+  </nb-card-footer>
+</nb-card>
+    

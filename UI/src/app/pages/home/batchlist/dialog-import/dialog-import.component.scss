@@ -1,0 +1,21 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .cancel {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .submit {
+    float: right;
+  }
+
+  .error {
+    font-size: 13px;
+    color: #c7254e;
+    background: #f9f2f4;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 5px 0 10px;
+  }
+}

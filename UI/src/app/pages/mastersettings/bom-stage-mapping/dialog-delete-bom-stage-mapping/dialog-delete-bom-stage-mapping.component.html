@@ -1,0 +1,9 @@
+<nb-card>
+  <nb-card-body>
+    <p>Do you want to remove "{{itemId}}"</p>
+  </nb-card-body>
+  <nb-card-footer>
+    <button class="close" nbButton status="hero" (click)="close()" >Cancel</button>
+    <button class="close" nbButton status="success" (click)="confirmDelete()" >Confirm</button>
+  </nb-card-footer>
+</nb-card>

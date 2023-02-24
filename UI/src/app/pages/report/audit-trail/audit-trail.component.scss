@@ -1,0 +1,35 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .layouttitle {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  .addButton {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .card.custom-card {
+    overflow-x: scroll;
+  }
+}
+
+:host /deep/ ng2-smart-table table tr th a {
+  //font-size: .8rem !important;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: left;
+}
+
+:host /deep/ ng2-smart-table tbody > tr > td {
+  //font-size: .8rem;
+  padding: .5em .5em .5em .5em;
+  vertical-align: top;
+  text-align: left;
+}

@@ -1,0 +1,101 @@
+@import '../../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+
+@include nb-install-component() {
+  .cancel {
+    margin-left: 1rem;
+    float: right;
+  }
+
+  .solar-card nb-card-header {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  //td.mat-cell:first-child {
+    //border-left: 1px solid black;
+  //}
+
+  table.resultTable th {
+    border: 2px solid black;
+    //padding: 2px 8px 0;
+    text-align: left;
+  }
+
+  table.resultTable tr {
+    height: fit-content;
+  }
+  
+  td.mat-cell {
+    /* row border */
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    //border: 1px black;
+    font-size: 15px;
+    padding: 2px 2px 2px 2px;
+  }
+  
+  .align-right td{
+    text-align: right;
+  }
+  
+  .label-result {
+    padding-left: 10px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  @include media-breakpoint-down(sm) {
+    ngx-traffic {
+      display: none;
+    }
+  }
+
+  .submit {
+    margin-right: 1rem;
+    float: right;
+  }
+
+  .error {
+    font-size: 13px;
+    color: #c7254e;
+    background: #f9f2f4;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 5px 0 10px;
+  }
+
+  .setHeight{
+    //height: 10000px;
+    max-block-size: 100%;
+    min-width: 850px !important;
+    max-width: 100% !important;
+    //min-width: 100% ;
+  }
+
+  .cdk-global-scrollblock { position: initial; width: initial; overflow: hidden; }
+
+  @media print{
+    .warning-card, .buttonPrint, .button-edit, .cancel{
+      display: none;
+    }
+    .setHeight{
+      width: 100% !important;
+      padding: none ;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+    }
+  }
+}

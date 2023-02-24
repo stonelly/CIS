@@ -1,0 +1,12 @@
+<nb-card>
+    <nb-card-header>
+      <span class="layouttitle">Customize Softwater Ratio </span>
+      <!--<button class="addButton" nbButton (click)="deleteMapping($event)" size="small" [status] = "'danger'"><nb-icon icon="trash-2-outline"></nb-icon>Delete Mapping</button>-->
+      <button class="addButton" nbButton (click)="openModal()" size="small"><nb-icon icon="plus"></nb-icon>Add New Custom Softwater Ratio</button>
+    </nb-card-header>
+  
+    <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="source">
+      </ng2-smart-table>
+    </nb-card-body>
+</nb-card>

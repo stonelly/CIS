@@ -1,0 +1,26 @@
+@import '../../@theme/styles/themes';
+
+.logo{
+    height: 5em; 
+    margin-bottom: 20px;
+}
+
+.error-message{
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 360px) and (max-width:640px)  {
+  h1 {
+      font-size: x-large;
+  }
+
+  .logo{
+    height: 4em; 
+    margin-bottom: 20px;
+  }
+
+  .error-message{
+    visibility: visible;
+    color: red;
+  }
+}
